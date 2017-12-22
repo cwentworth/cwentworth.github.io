@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>columns-to-list</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script>
+function myFunction() {
+    var before = document.getElementById('input').value;
+    var delim = document.getElementById('delim').value;
+    var after = before.replace(/[\n\r]/g,delim);
+    document.getElementById('result').value = after;
+}
+</script>
+<style>
+html{
+width:760;
+margin:10px;
+margin-left: 60px;
+}
+html p{
+font-family: helvetica, sans-serif;
+font-size:0.775em;
+margin:4px;    
+}
+#displayTitle{
+font-size:1.1em;
+font-weight: 800;
+margin:2px;    
+}    
+#input{
+width: 200px;
+height: 175px;
+border: 3px solid #ededed;  
+border-radius: 8px;  
+resize:none;
+margin:2px;    
+}    
+#delim{
+width:60px;
+height:30px;
+border: 3px solid #ededed;
+border-radius: 8px;
+resize: none;
+font-family: helvetica, sans-serif;
+font-size:1.25em;
+margin:2px;    
+}    
+#result{
+width: 740px;
+height: 100px;   
+border: 3px solid #fbfbfb; 
+border-radius: 8px;   
+margin:2px;
+resize:none;
+}   
+.myButton{
+background-color:#FAFAFA;
+color:#000000;
+border-radius: 8px;
+font-family: helvetica, sans-serif;
+font-size:0.85em;
+width:100px;
+height:40px;
+border: 3px solid #ededed;
+margin:2px;    
+}    
+.myButton:hover {
+  background: #c8cccc
+}    
+#bottombg{
+background-color: #fafafa;
+}
+#topbg{
+background-color: #e7e7e7;
+}    
+</style>
+</head>
+<body>
+<p id="displayTitle">columns to list generator</p>
+<div id="topbg">
+<p>paste columns of data below</p>    
+<textarea id="input"></textarea>
+<p></p>    
+<textarea id="delim"></textarea>
+<p>enter your delimiter above (examples , / - ; . _ | \ for quotes and commas enter ",")</p>    
+<p></p>
+<button class="myButton" type="button" onclick="myFunction()">generate list</button> 
+</div>    
+<div id="bottombg">
+<textarea id="result"></textarea> 
+<p>copy the list output above</p>
+<p><a href="www.hamsandwich.org"><img src="https://dl.dropboxusercontent.com/u/13389353/pages/hamsandwich/images/hamsandwichlogo-alt-pp.png"></a></p>
+<br></br>
+<p>receive a link to the ad-free version with any donation</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NCLVZZ95U46TQ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>    
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hamsandwich -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5503098966613663"
+     data-ad-slot="4500230224"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>     
+</body>
+</html>

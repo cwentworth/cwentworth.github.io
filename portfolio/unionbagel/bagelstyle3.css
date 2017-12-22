@@ -1,0 +1,159 @@
+body {
+margin: 0 auto;
+width: 1060px;
+}
+
+#mainlogo {
+width:587px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.hourscontact{
+font-family:"Helvetica";
+font-size:1em;
+font-weight:normal;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+.aboutbagels{
+    float: left;
+    margin-left: 100px;
+    margin-top: 34px;
+    width: 650px;
+	padding-bottom:50px;
+}
+
+p{
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+line-height:1.4;
+}
+
+.rightf{
+position:absolute;
+left:100%;
+right:0%;
+padding-top:25px;
+}
+
+#sepbar{
+border:1px solid black;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+margin-top:4px;
+margin-bottom:2px;
+}
+
+#sepbarunder{
+border:1px solid black;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+margin-top:1.5px;
+margin-bottom:2px;
+}
+
+#sepbar2{
+border:1px solid black;
+width:144px;
+margin-left:auto;
+margin-right:auto;
+margin-top:4px;
+margin-bottom:4px;
+}
+
+#contactr{
+/* /* border:2px solid blue; */ */
+height:90px;
+width:222px;
+background-size:100%;
+margin-left:2px;
+margin-right:5px;
+margin-top:20px;
+margin-bottom:1px;
+float:left;
+clear:none;
+}
+
+#contactr2{
+/* border:2px solid blue; */
+height:90px;
+width:222px;
+background-size:100%;
+margin-left:2px;
+margin-right:5px;
+margin-top:1px;
+margin-bottom:4px;
+float:left;
+clear:none;
+}
+#findbagels{
+/* font-family:"Helvetica";
+font-size:1em;
+font-weight:normal; */
+/* text-align:right; */
+float:left;
+width:225px;
+margin-left:20px;
+/* clear:none; */
+/* border:1px solid red; */
+}
+
+#findbagels{
+font-family:"Helvetica";
+font-size:.75em;
+}
+
+#findbagels ul{
+list-style:none;
+text-align:left;
+font-family:"Helvetica";
+font-size:1.5em;
+}
+
+#findbagels ul a:link{
+text-decoration:none;
+color:#4C4C4C;
+}
+
+#findbagels ul a:visited{
+text-decoration:none;
+color:#4C4C4C;
+}
+
+#findbagels ul a:hover{
+text-decoration:none;
+color:#339966;
+}
+
+#findbagels ul a:active{
+text-decoration:none;
+color:#339966;
+}
+
+.TextWrapL{
+float:left;
+margin:10px;
+border:2px solid #FF5C33;
+}
+
+.TextWrapR{
+float:right;
+margin:10px;
+border:2px solid #FF5C33;
+}
+
+.local{
+color:#19AC63;
+}
+
+.vline{
+color:#FF5C33;
+}
+
+.retailer{
+color:#fffff;
+}

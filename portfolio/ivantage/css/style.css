@@ -1,0 +1,222 @@
+html{
+font-family: sans-serif;
+width: 1366px;
+height: 1070px;
+margin: auto;
+color:white;
+background: url("assets/rural.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+opacity: 0.90;
+width:100%;
+}
+#main H1{
+margin:10px;
+text-align: center;
+font-size: 2.5em;
+}
+#main p{
+margin:5px;
+text-align: center;
+font-size: 1em;
+}
+.largefont{
+font-weight: bold;
+font-size: 1em;
+font-family: sans-serif;
+}
+#main{
+width 1366px;
+margin:auto;
+}
+#smain{
+width: 560px;
+margin-left: auto;
+margin-right: auto;
+background-color: f8f8f8;
+opacity: 0.9;
+color: black;
+text-align: center;
+}
+#smain p{
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+/* unvisited link */
+#smain p a:link {
+    color: #f06430;
+}
+
+/* visited link */
+#smain p a:visited {
+    color: #f06430;
+}
+
+/* mouse over link */
+#smain p a:hover {
+    color: #3a6f8f;
+}
+
+/* selected link */
+#smain p a:active {
+    color: #f06430;
+}
+#container{
+clear:both;
+width: 930px;
+margin: auto;
+}
+#uselect{
+width:100px;
+margin: auto;
+}
+#uselect select{
+width: 100px;
+height: 50px;
+text-align: center;
+font-size: 1.5em;
+background: transparent;
+background-color: 3a6f8f;
+color: white;
+border: 2px solid #f06430;
+-moz-appearance:none;
+-webkit-appearance:none;
+}
+select::-ms-expand {
+display: none;
+}
+input[type=submit] {
+    border: 0;
+    width: 100px;
+    height:40px;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    color: white;
+    background: #f06430;
+    vertical-align: top;
+}
+#revenue{
+height: 100px;
+width: 300px;
+background: #3a6f8f;
+float:left;
+margin:5px;
+color:white;
+font-size: 3.5em;
+font-weight: bold;
+text-align: center;
+line-height: 100px;
+}
+#jobs{
+height: 100px;
+width: 300px;
+background: #f06430;
+float:left;
+margin:5px;
+color:white;
+font-size: 3.5em;
+font-weight: bold;
+text-align: center;
+line-height: 100px;
+}
+#margin{
+height: 100px;
+width: 300px;
+background: #55e5ff;
+float:left;
+margin:5px;
+color:white;
+font-size: 3.5em;
+font-weight: bold;
+text-align: center;
+line-height: 100px;
+}
+#impact{
+width: 930px;
+margin: auto;
+}
+#b_revenue{
+height: 300px;
+width: 300px;
+background: #3a6f8f;
+float:left;
+margin-top:-5px;
+margin-left:5px;
+color:white;
+font-size: 1.75em;
+text-align: center;
+line-height: 75px;
+}
+#b_jobs{
+height: 300px;
+width: 300px;
+background: #f06430;
+float:left;
+margin-top:-5px;
+margin-left:10px;
+color:white;
+font-size: 2.5em;
+text-align: center;
+line-height: 100px;
+}
+#b_margin{
+height: 300px;
+width: 300px;
+background: #55e5ff;
+float:left;
+margin-top:-5px;
+margin-left:10px;
+color:white;
+font-size: 1.5em;
+text-align: center;
+line-height: 50px;
+}
+#foot{
+position:fixed;
+height:40px;
+bottom:0px;
+left:0px;
+right:0px;
+margin-bottom:0px;
+background-color: #f8f8f8;
+opacity: 0.8;
+color: #3a6f8f;
+text-align: center;
+line-height: 40px;
+}
+#logo{
+position:fixed;
+bottom:0px;
+right:0px;
+margin-bottom:0px;
+float:right;
+}
+#menu{
+background-color: f8f8f8;
+width: 280px;
+margin: auto;
+border-radius: 25px;
+color: black;
+opacity: 0.9;
+padding: 1px;
+text-align: center;
+font-weight: bold;
+}
+#spacer{
+height: 20px;
+width: 920px;
+line-height: 20px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 410px;
+text-align: center;
+background-color: f8f8f8;
+color: black;
+font-weight: bold;
+clear:both;
+opacity: 0.9;
+}
