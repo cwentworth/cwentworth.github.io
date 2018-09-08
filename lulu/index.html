@@ -2,10 +2,18 @@
 <head>
 </head>
 <body>
-<script type="application/json" src="data/activities.json"></script>
-<script>
-var acts = JSON.parse(activities);
-</script>
-<p> hello </p>
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAUD5iUJv4iQ_zrfbqENOsXgUghMxoq5lg",
+    authDomain: "lulu-3f536.firebaseapp.com",
+    databaseURL: "https://lulu-3f536.firebaseio.com",
+    projectId: "lulu-3f536",
+    storageBucket: "",
+    messagingSenderId: "204130718041"
+  };
+  firebase.initializeApp(config);
+</script>
 </hmtl>
