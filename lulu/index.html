@@ -17,6 +17,28 @@
   firebase.initializeApp(config);
   var database = firebase.database();
   var ref = database.ref('activities');
+  ref.on('value', gotData, errData);
+</script>
+
+<script>
+
+function submitActivity() {
+  var data = {
+    type: typeInput.value()
+  };
+  console.log(data);
+};
+
+function gotData(data){
+  console.log(data);
+};
+
+function errData(err){
+  console.log('Error!');
+  console.log(err);
+};
+
+
 </script>
 
 </hmtl>
