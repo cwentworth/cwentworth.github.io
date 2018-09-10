@@ -19,9 +19,7 @@
   var ref = database.ref('activities');
   ref.on('value', gotData, errData);
 </script>
-
 <script>
-
 function submitActivity() {
   var data = {
     type: typeInput.value()
@@ -37,8 +35,5 @@ function errData(err){
   console.log('Error!');
   console.log(err);
 };
-
-
 </script>
-
 </hmtl>
