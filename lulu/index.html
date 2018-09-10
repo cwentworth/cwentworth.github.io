@@ -18,22 +18,21 @@
   var database = firebase.database();
   var ref = database.ref('activities');
   ref.on('value', gotData, errData);
-</script>
-<script>
-function submitActivity() {
-  var data = {
-    type: typeInput.value()
+
+  function submitActivity() {
+    var data = {
+      type: typeInput.value()
+    };
+    console.log(data);
   };
-  console.log(data);
-};
 
-function gotData(data){
-  console.log(data.val());
-};
+  function gotData(data){
+    console.log(data.val());
+  };
 
-function errData(err){
-  console.log('Error!');
-  console.log(err);
-};
+  function errData(err){
+    console.log('Error!');
+    console.log(err);
+  };
 </script>
 </hmtl>
