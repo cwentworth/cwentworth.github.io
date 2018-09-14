@@ -19,7 +19,7 @@
   var cT = new Date(Date.now());
 </script>
 <p><script>paste('today is ' + cT);</script></p>
-<form>
+<form onSubmit="dataEntry()">
 <select name = "type" id = "usType">select what you're logging
 <option>medication</option>
 <option>seizure</option>
@@ -34,6 +34,7 @@
 <option>am</option>
 <option>pm</option>
 </select>
+<input type="submit">enter!</input>
 </form>
 
 <script>
