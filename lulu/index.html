@@ -18,11 +18,22 @@ var acts = acts || [];
 database.ref('activities').orderByValue().on("value", function(snapshot) {
 snapshot.forEach(function(data) {
   acts.push(data.val());
-  var sfActs = acts.filter(val => {
-  return val.scw === 'hotdog';
   });
 });
 });
+
+var hats = [];
+database.ref('activities').orderByValue().on("value", function(snapshot) {
+  snapshot.forEach(function(data) {
+    var item = data.val();
+    item.key = data.key;
+    hats.push(item);
+  });
+    return hats;
+});
+
+sfActs = hats.filter(function (x) {return x.scw == 'hotdog';});
+
 </script>
 </head>
 <body>
