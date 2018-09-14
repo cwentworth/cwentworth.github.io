@@ -17,16 +17,8 @@
   firebase.initializeApp(config);
   let database = firebase.database();
   var cT = new Date(Date.now());
-  var usType = '';
-  var usSCW = '';
-  var usYear = document.getElementById('usYear').value;
-  var usMonth = '';
-  var usDay = '';
-  var usHour = '';
-  var usMin = '';
-  var usTz = '';
 </script>
-<p><script>'today is ' + cT;</script></p>
+<p><script>paste('today is ' + cT);</script></p>
 <form>
 <select name = "type" id = "usType">
 <option>medication</option>
@@ -40,5 +32,16 @@
 <input type="text" name = "minute" id = "usMin">minute</input>
 <input type="text" name = "tz" id = "usTz">time zone</input>
 </form>
+
+<script>
+var usType = document.getElementById('usYear').value;
+var usSCW = document.getElementById('usYear').value;
+var usYear = document.getElementById('usYear').value;
+var usMonth = document.getElementById('usYear').value;
+var usDay = document.getElementById('usYear').value;
+var usHour = document.getElementById('usYear').value;
+var usMin = document.getElementById('usYear').value;
+var usTz = document.getElementById('usYear').value;
+</script>
 
 </hmtl>
