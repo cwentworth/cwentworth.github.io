@@ -23,6 +23,7 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     acts.push(data.val());
   });
 });
+  var sfActs = sfActs || [];
   var sfActs = acts.filter(val => {
   return val.scw === 'hotdog';
   });
