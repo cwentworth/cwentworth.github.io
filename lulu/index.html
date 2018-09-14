@@ -29,17 +29,16 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     item.key = data.key;
     if(item.type=='medication' && item.scw=='hotdog'){
     mdcn.push(item);
+    mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
   };
     if(item.type=='seizure' && item.scw=='hotdog'){
     szr.push(item);
+    mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
     };
   });
     return mdcn;
     return szr;
 });
-
-mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
-mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
 
 Date.prototype.addHours = function(h) {
    this.setTime(this.getTime() + (h*60*60*1000));
