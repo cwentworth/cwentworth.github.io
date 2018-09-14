@@ -86,9 +86,9 @@
       MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
       };
 
-      cp1 = document.body.createElement('p');
-      cp1.setAttribute("class", "txt");
-      cp1.appendChild(MdcnStmnt);
+      let cp1 = document.createElement('p');
+      cp1.className = 'txt';
+      cp1.innerHTML(MdcnStmnt);
 
       cp2 = document.body.createElement('p');
       cp2.setAttribute("class", "txt");
