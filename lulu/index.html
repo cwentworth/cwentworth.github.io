@@ -47,7 +47,7 @@
   var deltSzr_h = '';
   var deltSzr_d = '';
   var SzrStmnt = '';
-
+  
   database.ref('activities').orderByValue().on("value", function(snapshot) {
     snapshot.forEach(function(data) {
       var item = data.val();
