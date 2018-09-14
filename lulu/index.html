@@ -20,14 +20,17 @@
     snapshot.forEach(function(data) {
       acts.push(data.val());
     });
+    var sfActs = acts.filter(val => {
+    return val.scw === 'hotdog';
+  });
   });
   </script>
 </head>
 <body>
   <script>
-    var sfActs = acts.filter(val => {
-    return val.scw === 'hotdog';
-  });
+  //  var sfActs = acts.filter(val => {
+  //  return val.scw === 'hotdog';
+  //});
   var mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
   var szr = sfActs.filter(function (x) {return x.type == 'seizure';});
 
