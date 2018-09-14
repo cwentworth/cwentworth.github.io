@@ -29,9 +29,8 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     hats.push(item);
   });
     return hats;
+    return sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
 });
-
-sfActs = hats.filter(function (x) {return x.scw == 'hotdog';});
 
 </script>
 </head>
