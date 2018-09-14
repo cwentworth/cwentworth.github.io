@@ -1,27 +1,6 @@
 <html>
 <head>
   <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyAUD5iUJv4iQ_zrfbqENOsXgUghMxoq5lg",
-      authDomain: "lulu-3f536.firebaseapp.com",
-      databaseURL: "https://lulu-3f536.firebaseio.com",
-      projectId: "lulu-3f536",
-      storageBucket: "",
-      messagingSenderId: "204130718041"
-    };
-    firebase.initializeApp(config);
-    var database = firebase.database();
-
-  var acts = acts || [];
-
-  database.ref('activities').orderByValue().on("value", function(snapshot) {
-    snapshot.forEach(function(data) {
-      acts.push(data.val());
-    });
-  });
-  </script>
 </head>
 <body>
   <script>
