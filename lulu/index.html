@@ -23,6 +23,9 @@ snapshot.forEach(function(data) {
 
 var mdcn = [];
 var szr = [];
+var mxMdcnDt = '';
+var mxSzrDt = '';
+
 database.ref('activities').orderByValue().on("value", function(snapshot) {
   snapshot.forEach(function(data) {
     var item = data.val();
