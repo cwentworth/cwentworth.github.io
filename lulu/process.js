@@ -1,7 +1,6 @@
 var sfActs = acts.filter(val => {
 return val.scw === 'hotdog';
 });
-};
 var mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
 var szr = sfActs.filter(function (x) {return x.type == 'seizure';});
 
