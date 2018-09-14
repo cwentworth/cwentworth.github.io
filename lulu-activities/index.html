@@ -24,6 +24,7 @@
 <option>medication</option>
 <option>seizure</option>
 </select>
+<input type="text" name = "typeOther" id = "usTypeOther">If other, please describe.</input></br>
 <input type="number" name = "month" id = "usMonth">month</input></br>
 <input type="number" name = "day" id = "usDay">day</input></br>
 <input type="number" name = "year" id = "usYear">year</input></br>
@@ -33,6 +34,7 @@
 <option>am</option>
 <option>pm</option>
 </select>
+<input type="text area" name = "usEvnts" id = "usEvnts">Notes</input></br>
 <input type="text" name = "usSCW" id = "usSCW">control word</input></br>
 <button type="button" onclick="dataEntry();">Enter</button>
 </form>
@@ -40,6 +42,7 @@
 <script>
 var dataEntry = function() {
   var usType = document.getElementById('usType').value;
+  var usTypeOther = document.getElementById('usTypeOther').value;
   var usSCW = document.getElementById('usSCW').value;
   var usYear = document.getElementById('usYear').value;
   var usMonth = document.getElementById('usMonth').value;
@@ -47,6 +50,7 @@ var dataEntry = function() {
   var usHour = document.getElementById('usHour').value;
   var usMin = document.getElementById('usMin').value;
   var usTz = document.getElementById('usTz').value;
+  var usEvnts = document.getElementById('usEvnts').value;
 
   var usMonthM = usMonth - 1;
 
