@@ -20,23 +20,23 @@
 </script>
 <p><script>write('today is ' + cT);</script></p>
 <form onSubmit="dataEntry()">
-<select name = "type" id = "usType">select what you're logging
+<select name = "type" id = "usType" value ="select what you're logging">
 <option>medication</option>
 <option>seizure</option>
 <option>other</option>
 </select>
 <input type="text" name = "typeOther" id = "usTypeOther">If other, please describe.</input></br>
-<input type="number" name = "month" id = "usMonth">month</input></br>
-<input type="number" name = "day" id = "usDay">day</input></br>
-<input type="number" name = "year" id = "usYear">year</input></br>
-<input type="number" name = "hour" id = "usHour">hour</input></br>
-<input type="number" name = "minute" id = "usMin">minute</input></br>
-<select name = "tz" id = "usTz">time zone
+<input type="number" name = "month" id = "usMonth" value = "month number 1-12"></input></br>
+<input type="number" name = "day" id = "usDay" value "day number 1-31"></input></br>
+<input type="number" name = "year" id = "usYear" value = <script>cT.getYear();</script></input></br>
+<input type="number" name = "hour" id = "usHour" value = "hour number 1-12"></input></br>
+<input type="number" name = "minute" id = "usMin" value = "minute number 1-59"></input></br>
+<select name = "tz" id = "usTz">
 <option>am</option>
 <option>pm</option>
 </select>
-<input type="text area" name = "usEvnts" id = "usEvnts">Notes</input></br>
-<input type="text" name = "usSCW" id = "usSCW">control word</input></br>
+<input type="text area" name = "usEvnts" id = "usEvnts" value = "notes or events"></input></br>
+<input type="text" name = "usSCW" id = "usSCW" value = "control word"></input></br>
 <button type="button" onclick="dataEntry();">Enter</button>
 </form>
 
