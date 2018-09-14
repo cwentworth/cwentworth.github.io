@@ -29,7 +29,8 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     hats.push(item);
   });
     return hats;
-    return var sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
+    var sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
+    return sfActs;
 });
 
 </script>
