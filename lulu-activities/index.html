@@ -66,11 +66,11 @@ var dataEntry = function() {
   var usMonthM = usMonth - 1;
 
   if(usTz == 'am'){
-    usHourM = usHour + 0;
+    var usHourM = usHour + 0;
   };
 
   if(usTz == 'pm'){
-    usHourM = usHour + 12;
+    var usHourM = usHour + 12;
   };
 
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
