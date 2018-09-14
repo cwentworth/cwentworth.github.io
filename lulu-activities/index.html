@@ -61,27 +61,52 @@ var dataEntry = function() {
   var usDt = new Date(usYear,usMonth,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
 
-  if(usType == 'medication') {
-    var dataEntryM = {
-       type:'medication',
-       Submitted: Date.now(),
-       dt: usDtStmp,
-       scw: usSCW
+  if(usSCW != ''){
+    if(usType == 'medication') {
+      var dataEntryM = {
+         type:'medication',
+         Submitted: Date.now(),
+         dt: usDtStmp,
+         scw: usSCW
+      };
+      console.log(dataEntryM);
     };
-    console.log(dataEntryM);
-  };
 
-  if(usType == 'seizure') {
-    var dataEntryS = {
-       type:'seizure',
-       Submitted: Date.now(),
-       dt: usDtStmp,
-       evnts: '',
-       scw: usSCW
+    if(usType == 'seizure') {
+      var dataEntryS = {
+         type:'seizure',
+         Submitted: Date.now(),
+         dt: usDtStmp,
+         evnts: '',
+         scw: usSCW
+      };
+      console.log(dataEntryS);
     };
-    console.log(dataEntryS);
+
+    if(usType == 'medication') {
+      var dataEntryM = {
+         type:'medication',
+         Submitted: Date.now(),
+         dt: usDtStmp,
+         scw: usSCW
+      };
+      console.log(dataEntryM);
+    };
+
+    if(usType == 'seizure') {
+      var dataEntryS = {
+         type:'seizure',
+         Submitted: Date.now(),
+         dt: usDtStmp,
+         evnts: '',
+         scw: usSCW
+      };
+      console.log(dataEntryS);
+    };
+  };
   };
 };
+
 
 
 
