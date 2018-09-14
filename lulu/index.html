@@ -20,8 +20,8 @@
   database.ref('activities').orderByValue().on("value", function(snapshot) {
     snapshot.forEach(function(data) {
       acts.push(data.val());
+      var actsM = acts;
     });
-    var actsM = acts;
   });
   </script>
 </head>
