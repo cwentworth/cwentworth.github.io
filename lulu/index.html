@@ -26,11 +26,9 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
 });
 </script>
 <script>
-if(acts != undefined){
-  var sfActs = acts.filter(function (x) {
-    return x.scw == 'hotdog';
-  });
-};
+  var sfActs = acts.filter(val => {
+  return val.scw === 'hotdog';
+});
 
 var mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
 var szr = sfActs.filter(function (x) {return x.type == 'seizure';});
