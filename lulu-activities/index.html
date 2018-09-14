@@ -30,18 +30,62 @@
 <input type="text" name = "year" id = "usYear">year</input></br>
 <input type="text" name = "hour" id = "usHour">hour</input></br>
 <input type="text" name = "minute" id = "usMin">minute</input></br>
-<input type="text" name = "tz" id = "usTz">time zone</input></br>
+<select name = "tz" id = "usTz">time zone
+<option>am</option>
+<option>pm</option>
+</select>
 </form>
 
 <script>
-var usType = document.getElementById('usYear').value;
-var usSCW = document.getElementById('usYear').value;
-var usYear = document.getElementById('usYear').value;
-var usMonth = document.getElementById('usYear').value;
-var usDay = document.getElementById('usYear').value;
-var usHour = document.getElementById('usYear').value;
-var usMin = document.getElementById('usYear').value;
-var usTz = document.getElementById('usYear').value;
+var dataEntry = function() {
+  var usType = document.getElementById('usType').value;
+  var usSCW = document.getElementById('usSCW').value;
+  var usYear = document.getElementById('usYear').value;
+  var usMonth = document.getElementById('usMonth').value;
+  var usDay = document.getElementById('usDay').value;
+  var usHour = document.getElementById('usHour').value;
+  var usMin = document.getElementById('usMin').value;
+  var usTz = document.getElementById('usTz').value;
+
+  var usMonthM = usMonth - 1;
+
+  if(usTz == 'am'){
+    usHourM = usHour + 0;
+  };
+
+  if(usTz == 'pm'){
+    usHourM = usHour + 12;
+  };
+
+  var usDt = new Date(usYear,usMonth,usDay,usHourM,usMin,0,0);
+  var usDtStmp = usDt.getTime();
+
+  if(usType == 'medication') {
+    var dataEntryM = {
+       type:'medication',
+       Submitted: Date.now(),
+       dt: usDtStmp,
+       scw: usSCW
+    };
+    console.log(dataEntryM);
+  };
+
+  if(usType == 'seizure') {
+    var dataEntryS = {
+       type:'seizure',
+       Submitted: Date.now(),
+       dt: usDtStmp,
+       evnts: [long walk,met lots of new people,long car ride],
+       scw: usSCW
+    };
+    console.log(dataEntryS);
+  };
+};
+
+
+
+//database.ref('activities').push(dataEntryA);
+
 </script>
 
 </hmtl>
