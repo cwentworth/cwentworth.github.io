@@ -83,6 +83,14 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     if(MdcnDue_h >= 1) {
     MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
     };
+
+    cp1 = document.createElement('p');
+    cp1.setAttribute("class", "txt");
+    cp1.createTextNode(MdcnStmnt);
+
+    cp2 = document.createElement('p');
+    cp2.setAttribute("class", "txt");
+    cp2.createTextNode(MdcnInstructions);
   };
     if(item.type=='seizure' && item.scw=='hotdog'){
     szr.push(item);
@@ -95,6 +103,10 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     deltSzr_d = Math.floor(deltSzr_raw / 86400);
     SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
     };
+
+    cp3 = document.createElement('p');
+    cp3.setAttribute("class", "txt");
+    cp3.createTextNode(SzrStmnt);
   });
     return mdcn;
     return szr;
