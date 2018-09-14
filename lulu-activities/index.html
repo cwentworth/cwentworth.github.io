@@ -82,27 +82,6 @@ var dataEntry = function() {
       };
       console.log(dataEntryS);
     };
-
-    if(usType == 'medication') {
-      var dataEntryM = {
-         type:'medication',
-         Submitted: Date.now(),
-         dt: usDtStmp,
-         scw: usSCW
-      };
-      console.log(dataEntryM);
-    };
-
-    if(usType == 'seizure') {
-      var dataEntryS = {
-         type:'seizure',
-         Submitted: Date.now(),
-         dt: usDtStmp,
-         evnts: '',
-         scw: usSCW
-      };
-      console.log(dataEntryS);
-    };
   };
 };
 
