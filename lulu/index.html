@@ -6,7 +6,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
 <script>
   // Initialize Firebase
-  let config = {
+  var config = {
     apiKey: "AIzaSyAUD5iUJv4iQ_zrfbqENOsXgUghMxoq5lg",
     authDomain: "lulu-3f536.firebaseapp.com",
     databaseURL: "https://lulu-3f536.firebaseio.com",
@@ -15,7 +15,7 @@
     messagingSenderId: "204130718041"
   };
   firebase.initializeApp(config);
-  let database = firebase.database();
+  var database = firebase.database();
   acts = [];
 database.ref('activities').orderByValue().on("value", function(snapshot) {
   snapshot.forEach(function(data) {
@@ -23,54 +23,54 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
   });
 });
 
-let sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
-let mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
-let szr = sfActs.filter(function (x) {return x.type == 'seizure';});
+var sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
+var mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
+var szr = sfActs.filter(function (x) {return x.type == 'seizure';});
 
-let mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
-let mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
+var mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
+var mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
 
 Date.prototype.addHours = function(h) {
    this.setTime(this.getTime() + (h*60*60*1000));
    return this;
 };
 
-let cT = Date.now();
-let mxMdcnDtForm = new Date(mxMdcnDt);
-let MdcnDue = mxMdcnDtForm.addHours(12);
-let MdcnDue_raw = MdcnDue.getTime();
+var cT = Date.now();
+var mxMdcnDtForm = new Date(mxMdcnDt);
+var MdcnDue = mxMdcnDtForm.addHours(12);
+var MdcnDue_raw = MdcnDue.getTime();
 
-let deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
-let deltMdcn_s = deltMdcn_raw % 60;
-let deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
-let deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
-let deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
+var deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
+var deltMdcn_s = deltMdcn_raw % 60;
+var deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
+var deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
+var deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
 
-let MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
-let MdcnDue_s = MdcnDue_raw_r % 60;
-let MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
-let MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
+var MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
+var MdcnDue_s = MdcnDue_raw_r % 60;
+var MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
+var MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
 
 
-let MdcnStmnt = 'It has been '
+var MdcnStmnt = 'It has been '
 + deltMdcn_h + ' hour(s) and '
 + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
 
 if(MdcnDue_h < 1) {
-let MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
+var MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
 };
 
 if(MdcnDue_h >= 1) {
-let MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
+var MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
 };
 
-let deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
-let deltSzr_s = deltSzr_raw % 60;
-let deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
-let deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
-let deltSzr_d = Math.floor(deltSzr_raw / 86400);
+var deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
+var deltSzr_s = deltSzr_raw % 60;
+var deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
+var deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
+var deltSzr_d = Math.floor(deltSzr_raw / 86400);
 
-let SzrStmnt = 'It has been '
+var SzrStmnt = 'It has been '
 + deltSzr_d + ' day(s) '
 + deltSzr_h + ' hour(s) and '
 + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
