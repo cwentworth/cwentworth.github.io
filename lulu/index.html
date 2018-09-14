@@ -26,11 +26,11 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
   snapshot.forEach(function(data) {
     var item = data.val();
     item.key = data.key;
+    if(item.type=='medication'){
     hats.push(item);
+  };
   });
     return hats;
-    var sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
-    return sfActs;
 });
 
 </script>
