@@ -24,8 +24,11 @@ database.ref('activities').orderByValue().on("value", function(snapshot) {
     acts.push(data.val());
   });
 });
-
-var sfActs = acts.filter(function (x) {return x.scw == 'hotdog';});
+</script>
+<script>
+var sfActs = acts.filter(function (x) {
+  return x.scw == 'hotdog';
+});
 var mdcn = sfActs.filter(function (x) {return x.type == 'medication';});
 var szr = sfActs.filter(function (x) {return x.type == 'seizure';});
 
