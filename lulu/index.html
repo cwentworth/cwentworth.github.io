@@ -16,7 +16,11 @@
   };
   firebase.initializeApp(config);
   var database = firebase.database();
+
+if (acts === 'undefined') {
   acts = [];
+};
+
 database.ref('activities').orderByValue().on("value", function(snapshot) {
   snapshot.forEach(function(data) {
     acts.push(data.val());
