@@ -86,13 +86,12 @@
       MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
       };
 
-      let cp1 = document.createElement('p');
+      var cp1 = document.createElement('p');
+      var ct1 = document.createTextNode(MdcnStmnt);
+      cp1.appendChild(ct1);
       cp1.className = 'txt';
-      cp1.innerHTML(MdcnStmnt);
+      document.body.appendChild(cp1);
 
-      cp2 = document.body.createElement('p');
-      cp2.setAttribute("class", "txt");
-      cp2.appendChild(MdcnInstructions);
     };
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
@@ -106,9 +105,6 @@
       SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
       };
 
-      cp3 = document.body.createElement('p');
-      cp3.setAttribute("class", "txt");
-      cp3.appendChild(SzrStmnt);
     });
       return mdcn;
       return szr;
