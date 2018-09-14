@@ -88,11 +88,11 @@
 
       cp1 = document.createElement('p');
       cp1.setAttribute("class", "txt");
-      cp1.createTextNode(MdcnStmnt);
+      cp1.appendChild(MdcnStmnt);
 
       cp2 = document.createElement('p');
       cp2.setAttribute("class", "txt");
-      cp2.createTextNode(MdcnInstructions);
+      cp2.appendChild(MdcnInstructions);
     };
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
@@ -108,7 +108,7 @@
 
       cp3 = document.createElement('p');
       cp3.setAttribute("class", "txt");
-      cp3.createTextNode(SzrStmnt);
+      cp3.appendChild(SzrStmnt);
     });
       return mdcn;
       return szr;
