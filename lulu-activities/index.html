@@ -61,7 +61,7 @@ var dataEntry = function() {
   var usDt = new Date(usYear,usMonth,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
 
-  if(usSCW != ''){
+  if(usSCW != '' && usMonth != '' && usDay != '' && usYear != '' && usHour !='' && usMinute != ''){
     if(usType == 'medication') {
       var dataEntryM = {
          type:'medication',
