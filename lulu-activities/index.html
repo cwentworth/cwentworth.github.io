@@ -62,15 +62,14 @@ var dataEntry = function() {
   var usMin = document.getElementById('usMin').value;
   var usTz = document.getElementById('usTz').value;
   var usEvnts = document.getElementById('usEvnts').value;
+  var usMonthM = document.getElementById('usMonth').value - 1;
 
-  var usMonthM = usMonth - 1;
-
-  if(usTz == 'am'){
-    var usHourM = usHour + 0;
+  if(document.getElementById('usTz').value == 'am'){
+    var usHourM = document.getElementById('usHour').value + 0;
   };
 
-  if(usTz == 'pm'){
-    var usHourM = usHour + 12;
+  if(document.getElementById('usTz').value == 'pm'){
+    var usHourM = document.getElementById('usHour').value + 12;
   };
 
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
