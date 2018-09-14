@@ -20,7 +20,6 @@ snapshot.forEach(function(data) {
   acts.push(data.val());
   });
 });
-});
 
 var hats = [];
 database.ref('activities').orderByValue().on("value", function(snapshot) {
