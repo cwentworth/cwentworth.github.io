@@ -73,7 +73,7 @@ var dataEntry = function() {
     usHourM = usHour + 12;
   };
 
-  var usDt = new Date(usYear,usMonth,usDay,usHourM,usMin,0,0);
+  var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
 
   if(usSCW != '' && usMonth != '' && usDay != '' && usYear != '' && usHour !='' && usMin != ''){
