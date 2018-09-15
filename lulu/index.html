@@ -72,21 +72,21 @@
 
       MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
 
-      mxMdcnDtFormi = mxMdcnDtForm;
-      MdcnDue = mxMdcnDtFormi.addHours(12);
-      MdcnDue_raw = MdcnDue.getTime();
-      MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
-      MdcnDue_s = MdcnDue_raw_r % 60;
-      MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
-      MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
-
-      if(MdcnDue_h < 1) {
-      MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
-      };
-
-      if(MdcnDue_h >= 1) {
-      MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
-      };
+      // mxMdcnDtFormi = mxMdcnDtForm;
+      // MdcnDue = mxMdcnDtFormi.addHours(12);
+      // MdcnDue_raw = MdcnDue.getTime();
+      // MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
+      // MdcnDue_s = MdcnDue_raw_r % 60;
+      // MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
+      // MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
+      //
+      // if(MdcnDue_h < 1) {
+      // MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
+      // };
+      //
+      // if(MdcnDue_h >= 1) {
+      // MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
+      // };
 
       if(document.getElementById('cp1') == null) {
       var cp1 = document.createElement('p');
@@ -97,14 +97,14 @@
       document.body.appendChild(cp1);
       };
 
-     if(document.getElementById('cp2') == null) {
-     var cp2 = document.createElement('p');
-     var ct2 = document.createTextNode(MdcnInstructions);
-     cp2.appendChild(ct2);
-     cp2.className = 'txt';
-     cp2.id = 'cp2'
-     document.body.appendChild(cp2);
-     };
+     // if(document.getElementById('cp2') == null) {
+     // var cp2 = document.createElement('p');
+     // var ct2 = document.createTextNode(MdcnInstructions);
+     // cp2.appendChild(ct2);
+     // cp2.className = 'txt';
+     // cp2.id = 'cp2'
+     // document.body.appendChild(cp2);
+     // };
 
     };
       if(item.type=='seizure' && item.scw=='hotdog'){
