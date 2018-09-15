@@ -93,15 +93,6 @@
 
     };
 
-    if(document.getElementById('cp1') == null) {
-    var cp1 = document.createElement('p');
-    var ct1 = document.createTextNode(MdcnStmnt);
-    cp1.appendChild(ct1);
-    cp1.className = 'txt';
-    cp1.id = 'cp1';
-    document.body.appendChild(cp1);
-    };
-
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
       mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
@@ -121,6 +112,15 @@
     cp3.className = 'txt';
     cp3.id = 'cp3';
     document.body.appendChild(cp3);
+    };
+
+    if(document.getElementById('cp1') == null) {
+    var cp1 = document.createElement('p');
+    var ct1 = document.createTextNode(MdcnStmnt);
+    cp1.appendChild(ct1);
+    cp1.className = 'txt';
+    cp1.id = 'cp1';
+    document.body.appendChild(cp1);
     };
   });
       return mdcn;
