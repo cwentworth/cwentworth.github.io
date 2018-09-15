@@ -65,9 +65,9 @@ var dataEntry = function() {
   var usMonthM = Number(document.getElementById('usMonth').value) - 1;
 
   if(document.getElementById('usTz').value == 'pm'){
-      var usHourMCK = Number(document.getElementById('usHour').value) + 12;
+      var usHourM = Number(document.getElementById('usHour').value) + 12;
     } else {
-      var usHourMCK = Number(document.getElementById('usHour').value);
+      var usHourM = Number(document.getElementById('usHour').value);
     };
 
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
