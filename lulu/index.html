@@ -12,8 +12,6 @@
     storageBucket: "",
     messagingSenderId: "204130718041"
   };
-  firebase.initializeApp(config);
-  var database = firebase.database();
 
   var acts = acts || [];
 
@@ -44,7 +42,8 @@
   var deltSzr_d = '';
   var SzrStmnt = '';
 
-  database.ref('activities').orderByValue().on("value", function(snapshot) {
+  firebase.initializeApp(config);
+  firebase.database().ref('activities').orderByValue().on("value", function(snapshot) {
     snapshot.forEach(function(data) {
       var item1 = data.val();
       item1.key = data.key;
@@ -100,8 +99,8 @@
      };
    });
 });
-
-database.ref('activities').orderByValue().on("value", function(snapshot) {
+firebase.initializeApp(config);
+firebase.database().ref('activities').orderByValue().on("value", function(snapshot) {
   snapshot.forEach(function(data) {
     var item2 = data.val();
     item2.key = data.key;
