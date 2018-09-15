@@ -54,10 +54,10 @@
       cT = Date.now();
       var mxMdcnDtForm = new Date(mxMdcnDt);
 
-      Date.prototype.addHours = function(h) {
-         this.setTime(this.getTime() + (h*60*60*1000));
-         return this;
-      };
+      // Date.prototype.addHours = function(h) {
+      //    this.setTime(this.getTime() + (h*60*60*1000));
+      //    return this;
+      // };
       deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
       deltMdcn_s = deltMdcn_raw % 60;
       deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
