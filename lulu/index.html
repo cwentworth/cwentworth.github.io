@@ -17,12 +17,6 @@
 
   var acts = acts || [];
 
-  database.ref('activities').orderByValue().on("value", function(snapshot) {
-  snapshot.forEach(function(data) {
-    acts.push(data.val());
-    });
-  });
-
   var dis = [];
   var mdcn = [];
   var szr = [];
