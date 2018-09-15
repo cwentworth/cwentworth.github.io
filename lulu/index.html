@@ -64,7 +64,7 @@
          this.setTime(this.getTime() + (h*60*60*1000));
          return this;
       };
-      deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
+      deltMdcn_raw = Math.abs(cT - (Math.max.apply(Math, mdcn.map(function(o) { return o.dt; })))) / 1000;
       deltMdcn_s = deltMdcn_raw % 60;
       deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
       deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
