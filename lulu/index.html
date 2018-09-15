@@ -98,7 +98,13 @@
      // };
 
      };
+   });
+});
 
+database.ref('activities').orderByValue().on("value", function(snapshot) {
+  snapshot.forEach(function(data) {
+    var item = data.val();
+    item.key = data.key;
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
       mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
@@ -118,10 +124,10 @@
       document.body.appendChild(cp3);
       };
     };
-  });
+});
       return mdcn;
       return szr;
-  });
+});
   </script>
 </body>
 </hmtl>
