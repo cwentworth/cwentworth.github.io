@@ -55,22 +55,20 @@ var dataEntry = function() {
   var usType = document.getElementById('usType').value;
   var usTypeOther = document.getElementById('usTypeOther').value;
   var usSCW = document.getElementById('usSCW').value;
-  var usYear = document.getElementById('usYear').value;
-  var usMonth = document.getElementById('usMonth').value;
-  var usDay = document.getElementById('usDay').value;
-  var usHour = document.getElementById('usHour').value;
-  var usMin = document.getElementById('usMin').value;
+  var usYear = Number(document.getElementById('usYear').value);
+  var usMonth = Number(document.getElementById('usMonth').value);
+  var usDay = Number(document.getElementById('usDay').value);
+  var usHour = Number(document.getElementById('usHour').value);
+  var usMin = Number(document.getElementById('usMin').value);
   var usTz = document.getElementById('usTz').value;
   var usEvnts = document.getElementById('usEvnts').value;
-  var usMonthM = document.getElementById('usMonth').value - 1;
-
-  if(document.getElementById('usTz').value == 'am'){
-    var usHourM = document.getElementById('usHour').value + 0;
-  };
+  var usMonthM = Number(document.getElementById('usMonth').value) - 1;
 
   if(document.getElementById('usTz').value == 'pm'){
-    var usHourM = document.getElementById('usHour').value + 12;
-  };
+      var usHourMCK = Number(document.getElementById('usHour').value) + 12;
+    } else {
+      var usHourMCK = Number(document.getElementById('usHour').value);
+    };
 
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
@@ -84,7 +82,7 @@ var dataEntry = function() {
          scw: usSCW
       };
       console.log(dataEntryM);
-      database.ref('activities').push(dataEntryM);
+      //database.ref('activities').push(dataEntryM);
     };
 
     if(usType == 'seizure') {
@@ -96,7 +94,7 @@ var dataEntry = function() {
          scw: usSCW
       };
       console.log(dataEntryS);
-      database.ref('activities').push(dataEntryS);
+      //database.ref('activities').push(dataEntryS);
     };
   };
 };
