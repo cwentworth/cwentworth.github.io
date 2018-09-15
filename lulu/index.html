@@ -65,6 +65,7 @@
       deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
 
       MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
+      var ct1 = document.createTextNode(MdcnStmnt);
 
       // mxMdcnDtFormi = mxMdcnDtForm;
       // MdcnDue = mxMdcnDtFormi.addHours(12);
@@ -84,7 +85,6 @@
 
       if(document.getElementById('cp1') == null) {
       var cp1 = document.createElement('p');
-      var ct1 = document.createTextNode(MdcnStmnt);
       cp1.appendChild(ct1);
       cp1.className = 'txt';
       cp1.id = 'cp1'
