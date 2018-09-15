@@ -64,7 +64,14 @@
       deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
       deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
       MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
-
+      if(document.getElementById('cp1') == null) {
+      var cp1 = document.createElement('p');
+      var ct1 = document.createTextNode(MdcnStmnt);
+      cp1.appendChild(ct1);
+      cp1.className = 'txt';
+      cp1.id = 'cp1';
+      document.body.appendChild(cp1);
+      };
       // mxMdcnDtFormi = mxMdcnDtForm;
       // MdcnDue = mxMdcnDtFormi.addHours(12);
       // MdcnDue_raw = MdcnDue.getTime();
@@ -102,11 +109,6 @@
       deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
       deltSzr_d = Math.floor(deltSzr_raw / 86400);
       SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
-    };
-  });
-      return mdcn;
-      return szr;
-      
       if(document.getElementById('cp3') == null) {
       var cp3 = document.createElement('p');
       var ct3 = document.createTextNode(SzrStmnt);
@@ -115,15 +117,10 @@
       cp3.id = 'cp3';
       document.body.appendChild(cp3);
       };
-
-      if(document.getElementById('cp1') == null) {
-      var cp1 = document.createElement('p');
-      var ct1 = document.createTextNode(MdcnStmnt);
-      cp1.appendChild(ct1);
-      cp1.className = 'txt';
-      cp1.id = 'cp1';
-      document.body.appendChild(cp1);
-      };
+    };
+  });
+      return mdcn;
+      return szr;
   });
   </script>
 </body>
