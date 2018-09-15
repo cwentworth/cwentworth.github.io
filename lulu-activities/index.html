@@ -75,7 +75,7 @@ var dataEntry = function() {
          scw: usSCW
       };
       console.log(dataEntryM);
-      //database.ref('activities').push(dataEntryM);
+      database.ref('activities').push(dataEntryM);
     };
 
     if(usType == 'seizure') {
@@ -87,7 +87,7 @@ var dataEntry = function() {
          scw: usSCW
       };
       console.log(dataEntryS);
-      //database.ref('activities').push(dataEntryS);
+      database.ref('activities').push(dataEntryS);
     };
   };
 };
