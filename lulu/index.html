@@ -64,21 +64,21 @@
          this.setTime(this.getTime() + (h*60*60*1000));
          return this;
       };
-      mxMdcnDtFormi = mxMdcnDtForm;
-      MdcnDue = mxMdcnDtFormi.addHours(12);
-      MdcnDue_raw = MdcnDue.getTime();
       deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
       deltMdcn_s = deltMdcn_raw % 60;
       deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
       deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
       deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
 
+      MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
+
+      mxMdcnDtFormi = mxMdcnDtForm;
+      MdcnDue = mxMdcnDtFormi.addHours(12);
+      MdcnDue_raw = MdcnDue.getTime();
       MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
       MdcnDue_s = MdcnDue_raw_r % 60;
       MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
       MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
-
-      MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
 
       if(MdcnDue_h < 1) {
       MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
