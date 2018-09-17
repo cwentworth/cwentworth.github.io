@@ -67,28 +67,15 @@ var dataEntry = function() {
   var usDtStmp = usDt.getTime();
 
   if(usSCW != '' && usMonth != '' && usDay != '' && usYear != '' && usHour !='' && usMin != ''){
-    if(usType == 'medication') {
-      var dataEntryM = {
-         type:'medication',
-         Submitted: Date.now(),
-         dt: usDtStmp,
-         scw: usSCW
-      };
-      database.ref('activities').push(dataEntryM);
-      document.write('Information Submitted');
-    };
-
-    if(usType == 'seizure') {
       var dataEntryS = {
-         type:'seizure',
+         type: usType,
          Submitted: Date.now(),
          dt: usDtStmp,
-         evnts: '',
+         evnts: usEvnts,
          scw: usSCW
-      };
+       }
       database.ref('activities').push(dataEntryS);
       document.write('Information Submitted');
-    };
   };
 };
 
