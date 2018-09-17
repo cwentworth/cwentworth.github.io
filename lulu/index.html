@@ -49,10 +49,10 @@
     snapshot.forEach(function(data) {
       var item = data.val();
       item.key = data.key;
-      if(item.type=='medication' && item.scw=='hotdog'){
+      if(item.type=='seizure meds' && item.scw=='hotdog'){
       mdcn.push(item);
       };
-      if(item.type=='seizure' && item.scw=='hotdog'){
+      if(item.type=='seizure event' && item.scw=='hotdog'){
       szr.push(item);
       };
    });
@@ -65,7 +65,7 @@
      deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
      deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
      deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
-     MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
+     MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her seizure medication.';
    var cp1 = document.createElement('p');
    var ct1 = document.createTextNode(MdcnStmnt);
    cp1.appendChild(ct1);
@@ -88,11 +88,11 @@
      MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
 
      if(MdcnDue_h < 1) {
-     MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
+     MdcnInstructions = "Lulu's next seizure medication is needed in about " + MdcnDue_m + " minute(s)";
      };
 
      if(MdcnDue_h >= 1) {
-     MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
+     MdcnInstructions = "Lulu's next seizure medication is needed in about " + MdcnDue_h + " hour(s)";
      };
    var cp2 = document.createElement('p');
    var ct2 = document.createTextNode(MdcnInstructions);

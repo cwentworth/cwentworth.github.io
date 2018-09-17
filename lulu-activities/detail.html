@@ -20,12 +20,15 @@
   let database = firebase.database();
   var cT = new Date(Date.now());
 </script>
-<p><script>document.write('today is ' + cT.toLocaleDateString());</script></p>
+<p><script>document.write('Today is ' + cT.toLocaleDateString());</script></p>
 <form onSubmit="dataEntry()">
-<p>select what you're logging</p>
+<p>What are you logging?</p>
 <select name = "type" id = "usType">
-<option>medication</option>
-<option>seizure</option>
+<option>seizure meds</option>
+<option>heart worm meds</option>
+<option>flea and tick meds</option>
+<option>seizure event</option>
+<option>weight</option>
 <option>other</option>
 </select></br>
 <input type="text" name = "month" id = "usMonth" placeholder="Month 1-12"></input>
