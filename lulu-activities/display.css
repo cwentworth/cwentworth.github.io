@@ -1,25 +1,25 @@
 button {
   height: 50px;
-  width: 180px;
+  width: 240px;
   font-size: 16px;
 }
 
 input {
   height: 50px;
-  width: 180px;
+  width: 240px;
   text-align:center;
   font-size: 16px;
 }
 
 select {
   height: 50px;
-  width: 180px;
+  width: 240px;
   text-align:center;
   font-size: 16px;
 }
 
 textarea {
   height: 50px;
-  width: 180px;
+  width: 240px;
   font-size: 16px;
 }
