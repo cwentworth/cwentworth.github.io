@@ -45,10 +45,10 @@
   firebase.initializeApp(config);
   firebase.database().ref('activities').orderByValue().on("value", function(snapshot) {
     snapshot.forEach(function(data) {
-      var item = data.val();
-      item.key = data.key;
-      if(item.type=='medication' && item.scw=='hotdog'){
-      mdcn.push(item);
+      var item1 = data.val();
+      item1.key = data.key;
+      if(item1.type=='medication' && item1.scw=='hotdog'){
+      mdcn.push(item1);
       mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
       cT = Date.now();
       mxMdcnDtForm = new Date(mxMdcnDt);
@@ -165,8 +165,8 @@
      // document.body.appendChild(cp2);
      // };
 
-     if(item.type=='seizure' && item.scw=='hotdog'){
-     szr.push(item);
+     if(item2.type=='seizure' && item2.scw=='hotdog'){
+     szr.push(item2);
      mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
      cT = Date.now();
      deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
