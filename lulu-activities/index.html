@@ -19,49 +19,22 @@
   var cT = new Date(Date.now());
 </script>
 <p><script>document.write('today is ' + cT.toLocaleDateString());</script></p>
-<form onSubmit="dataEntry()">
-<p>select what you're logging</p>
-<select name = "type" id = "usType">
-<option>medication</option>
-<option>seizure</option>
-<option>other</option>
-</select></br>
-<input type="text" name = "typeOther" id = "usTypeOther" placeholder = "If other, please describe."></input></br>
-<input type="text" name = "month" id = "usMonth" placeholder="Month number 1-12"></input>
-<input type="text" name = "day" id = "usDay" placeholder="Day number 1-31"></input>
-<input type="text" name = "year" id = "usYear" placeholder="Year"</input></br>
-<input type="text" name = "hour" id = "usHour" placeholder="Hour number 1-12"></input>
-<input type="text" name = "minute" id = "usMin" placeholder="Minute number 0-59"></input>
-<select name = "tz" id = "usTz">
-<option>am</option>
-<option>pm</option>
-</select></br>
-<!-- <p>Notes or events</p> -->
-<textarea name = "usEvnts" id = "usEvnts" placeholder="Notes of events"></textarea></br>
-<!-- <p>Write in the control word</p> -->
+<p>If you are logging medication that was given within the past 10 - 20 minutes enter the control word and select the button below.</p>
+<form onSubmit="quickMedEntry()">
 <input type="text" name = "usSCW" id = "usSCW" placeholder="what is the control word"></input></br>
-<button type="button" onclick="dataEntry();">Enter</button>
+<button type="button" onclick="quickMedEntry();">Quick Log of Medication Given in the Past 10-20 Minutes</button>
 </form>
-
+<p>If you are logging anything else including medication given in the past, please click the button below.</p>
 <script>
-var dataEntry = function() {
-  var usType = document.getElementById('usType').value;
-  var usTypeOther = document.getElementById('usTypeOther').value;
+var quickMedEntry = function() {
+  var usType = 'medication';
   var usSCW = document.getElementById('usSCW').value;
-  var usYear = Number(document.getElementById('usYear').value);
-  var usMonth = Number(document.getElementById('usMonth').value);
-  var usDay = Number(document.getElementById('usDay').value);
-  var usHour = Number(document.getElementById('usHour').value);
-  var usMin = Number(document.getElementById('usMin').value);
-  var usTz = document.getElementById('usTz').value;
-  var usEvnts = document.getElementById('usEvnts').value;
-  var usMonthM = Number(document.getElementById('usMonth').value) - 1;
-
-  if(document.getElementById('usTz').value == 'pm'){
-      var usHourM = Number(document.getElementById('usHour').value) + 12;
-    } else {
-      var usHourM = Number(document.getElementById('usHour').value);
-    };
+  var dn = new Date(Date.now());
+  var usYear = Number(dn.getFullYear());
+  var usMonthM = Number(dn.getMonth());
+  var usDay = Number(dn.getDate());
+  var usHourM = Number(dn.getHours());
+  var usMin = Number(dn.getMinutes());
 
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
@@ -71,7 +44,7 @@ var dataEntry = function() {
          type: usType,
          Submitted: Date.now(),
          dt: usDtStmp,
-         evnts: usEvnts,
+         evnts: '',
          scw: usSCW
        }
       database.ref('activities').push(dataEntryS);
