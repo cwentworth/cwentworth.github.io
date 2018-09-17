@@ -66,7 +66,7 @@
      deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
      deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
      MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
-   var cp1 = document.createElement('h1');
+   var cp1 = document.createElement('p');
    var ct1 = document.createTextNode(MdcnStmnt);
    cp1.appendChild(ct1);
    cp1.className = 'txt';
@@ -94,7 +94,7 @@
      if(MdcnDue_h >= 1) {
      MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
      };
-   var cp2 = document.createElement('h1');
+   var cp2 = document.createElement('p');
    var ct2 = document.createTextNode(MdcnInstructions);
    cp2.appendChild(ct2);
    cp2.className = 'txt';
@@ -111,7 +111,7 @@
      deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
      deltSzr_d = Math.floor(deltSzr_raw / 86400);
      SzrStmnt = '🏥 It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
-   var cp3 = document.createElement('h1');
+   var cp3 = document.createElement('p');
    var ct3 = document.createTextNode(SzrStmnt);
    cp3.appendChild(ct3);
    cp3.className = 'txt';
