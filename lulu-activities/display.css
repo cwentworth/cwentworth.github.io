@@ -1,5 +1,4 @@
-body {
-    font-size: 100%;
-    min-width : 375px;
-    max-width : 667px;
+button {
+  height: 40px;
+  width: 140px;
 }
