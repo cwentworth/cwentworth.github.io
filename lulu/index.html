@@ -47,6 +47,9 @@
     snapshot.forEach(function(data) {
       var item = data.val();
       item.key = data.key;
+      if(item.type=='medication' && item.scw=='hotdog'){
+      mdcn.push(item);
+      };
       // Date.prototype.addHours = function(h) {
       //    this.setTime(this.getTime() + (h*60*60*1000));
       //    return this;
@@ -98,8 +101,6 @@
    //   return mdcn;
    //   return szr;
    });
-   if(item.type=='medication' && item.scw=='hotdog'){
-   mdcn.push(item);
    if(document.getElementById('cp1') == null) {
      mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
      cT = Date.now();
@@ -116,8 +117,6 @@
    cp1.className = 'txt';
    cp1.id = 'cp1';
    document.body.appendChild(cp1);
-   };
-
    };
 });
   </script>
