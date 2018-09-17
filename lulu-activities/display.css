@@ -6,4 +6,11 @@ button {
 input {
   height: 50px;
   width: 140px;
+  text-align:center;
+}
+
+select {
+  height: 50px;
+  width: 140px;
+  text-align:center;
 }
