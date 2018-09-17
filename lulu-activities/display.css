@@ -7,15 +7,16 @@ button {
 input {
   height: 80px;
   width: 240px;
-  text-align:center;
+  text-align: center;
   font-size: 16px;
 }
 
 select {
   height: 80px;
   width: 240px;
-  text-align:center;
+  text-align: center;
   font-size: 16px;
+  text-align-last: center;
 }
 
 textarea {
