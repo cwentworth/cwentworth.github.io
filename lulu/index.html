@@ -88,11 +88,11 @@
      MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
 
      if(MdcnDue_h < 1) {
-     MdcnInstructions = "Lulu's next seizure medication is needed in about " + MdcnDue_m + " minute(s)";
+     MdcnInstructions = "Lulu's next seizure medication dose is needed in about " + MdcnDue_m + " minute(s)";
      };
 
      if(MdcnDue_h >= 1) {
-     MdcnInstructions = "Lulu's next seizure medication is needed in about " + MdcnDue_h + " hour(s)";
+     MdcnInstructions = "🐶 Lulu's next seizure medication is needed in about " + MdcnDue_h + " hour(s)";
      };
    var cp2 = document.createElement('p');
    var ct2 = document.createTextNode(MdcnInstructions);
