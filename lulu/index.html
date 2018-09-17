@@ -53,56 +53,6 @@
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
       };
-
-      // Date.prototype.addHours = function(h) {
-      //    this.setTime(this.getTime() + (h*60*60*1000));
-      //    return this;
-      // };
-      // mxMdcnDtFormi = mxMdcnDtForm;
-      // MdcnDue = mxMdcnDtFormi.addHours(12);
-      // MdcnDue_raw = MdcnDue.getTime();
-      // MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
-      // MdcnDue_s = MdcnDue_raw_r % 60;
-      // MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
-      // MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
-      //
-      // if(MdcnDue_h < 1) {
-      // MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
-      // };
-      //
-      // if(MdcnDue_h >= 1) {
-      // MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
-      // };
-
-     // if(document.getElementById('cp2') == null) {
-     // var cp2 = document.createElement('p');
-     // var ct2 = document.createTextNode(MdcnInstructions);
-     // cp2.appendChild(ct2);
-     // cp2.className = 'txt';
-     // cp2.id = 'cp2'
-     // document.body.appendChild(cp2);
-     // };
-
-
-   //   mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
-   //   cT = Date.now();
-   //   deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
-   //   deltSzr_s = deltSzr_raw % 60;
-   //   deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
-   //   deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
-   //   deltSzr_d = Math.floor(deltSzr_raw / 86400);
-   //   SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
-   //   if(document.getElementById('cp3') == null) {
-   //   var cp3 = document.createElement('p');
-   //   var ct3 = document.createTextNode(SzrStmnt);
-   //   cp3.appendChild(ct3);
-   //   cp3.className = 'txt';
-   //   cp3.id = 'cp3';
-   //   document.body.appendChild(cp3);
-   //   };
-   // };
-   //   return mdcn;
-   //   return szr;
    });
    if(document.getElementById('cp1') == null) {
      mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
@@ -158,7 +108,7 @@
      deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
      deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
      deltSzr_d = Math.floor(deltSzr_raw / 86400);
-     SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
+     SzrStmnt = '🏥 It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
    var cp3 = document.createElement('p');
    var ct3 = document.createTextNode(SzrStmnt);
    cp3.appendChild(ct3);
