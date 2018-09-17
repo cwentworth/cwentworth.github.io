@@ -122,6 +122,34 @@
    document.body.appendChild(cp1);
    };
 
+   if(document.getElementById('cp2') == null) {
+     Date.prototype.addHours = function(h) {
+        this.setTime(this.getTime() + (h*60*60*1000));
+        return this;
+     };
+     mxMdcnDtFormi = mxMdcnDtForm;
+     MdcnDue = mxMdcnDtFormi.addHours(12);
+     MdcnDue_raw = MdcnDue.getTime();
+     MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
+     MdcnDue_s = MdcnDue_raw_r % 60;
+     MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
+     MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
+
+     if(MdcnDue_h < 1) {
+     MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
+     };
+
+     if(MdcnDue_h >= 1) {
+     MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
+     };
+   var cp2 = document.createElement('p');
+   var ct2 = document.createTextNode(MdcnInstructions);
+   cp2.appendChild(ct2);
+   cp2.className = 'txt';
+   cp2.id = 'cp1';
+   document.body.appendChild(cp2);
+   };
+
    if(document.getElementById('cp3') == null) {
      mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
      cT = Date.now();
