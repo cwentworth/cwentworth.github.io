@@ -47,28 +47,6 @@
     snapshot.forEach(function(data) {
       var item = data.val();
       item.key = data.key;
-
-      if(item.type=='medication' && item.scw=='hotdog'){
-      mdcn.push(item);
-      if(document.getElementById('cp1') == null) {
-        mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
-        cT = Date.now();
-        var mxMdcnDtForm = new Date(mxMdcnDt);
-        deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
-        deltMdcn_s = deltMdcn_raw % 60;
-        deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
-        deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
-        deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
-        MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
-      var cp1 = document.createElement('p');
-      var ct1 = document.createTextNode(MdcnStmnt);
-      cp1.appendChild(ct1);
-      cp1.className = 'txt';
-      cp1.id = 'cp1';
-      document.body.appendChild(cp1);
-      };
-
-      };
       // Date.prototype.addHours = function(h) {
       //    this.setTime(this.getTime() + (h*60*60*1000));
       //    return this;
@@ -120,6 +98,27 @@
    //   return mdcn;
    //   return szr;
    });
+   if(item.type=='medication' && item.scw=='hotdog'){
+   mdcn.push(item);
+   if(document.getElementById('cp1') == null) {
+     mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
+     cT = Date.now();
+     var mxMdcnDtForm = new Date(mxMdcnDt);
+     deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
+     deltMdcn_s = deltMdcn_raw % 60;
+     deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
+     deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
+     deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
+     MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
+   var cp1 = document.createElement('p');
+   var ct1 = document.createTextNode(MdcnStmnt);
+   cp1.appendChild(ct1);
+   cp1.className = 'txt';
+   cp1.id = 'cp1';
+   document.body.appendChild(cp1);
+   };
+
+   };
 });
   </script>
 </body>
