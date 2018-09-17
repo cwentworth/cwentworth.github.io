@@ -98,27 +98,27 @@
      // document.body.appendChild(cp2);
      // };
 
-     if(item.type=='seizure' && item.scw=='hotdog'){
-     szr.push(item);
-     mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
-     cT = Date.now();
-     deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
-     deltSzr_s = deltSzr_raw % 60;
-     deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
-     deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
-     deltSzr_d = Math.floor(deltSzr_raw / 86400);
-     SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
-     if(document.getElementById('cp3') == null) {
-     var cp3 = document.createElement('p');
-     var ct3 = document.createTextNode(SzrStmnt);
-     cp3.appendChild(ct3);
-     cp3.className = 'txt';
-     cp3.id = 'cp3';
-     document.body.appendChild(cp3);
-     };
-   };
-     return mdcn;
-     return szr;
+   //   if(item.type=='seizure' && item.scw=='hotdog'){
+   //   szr.push(item);
+   //   mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
+   //   cT = Date.now();
+   //   deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
+   //   deltSzr_s = deltSzr_raw % 60;
+   //   deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
+   //   deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
+   //   deltSzr_d = Math.floor(deltSzr_raw / 86400);
+   //   SzrStmnt = 'It has been ' + deltSzr_d + ' day(s) ' + deltSzr_h + ' hour(s) and ' + deltSzr_m + ' minute(s) since Lulu last had a seizure.';
+   //   if(document.getElementById('cp3') == null) {
+   //   var cp3 = document.createElement('p');
+   //   var ct3 = document.createTextNode(SzrStmnt);
+   //   cp3.appendChild(ct3);
+   //   cp3.className = 'txt';
+   //   cp3.id = 'cp3';
+   //   document.body.appendChild(cp3);
+   //   };
+   // };
+   //   return mdcn;
+   //   return szr;
    });
 });
   </script>
