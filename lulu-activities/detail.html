@@ -67,7 +67,7 @@ var dataEntry = function() {
   var usDt = new Date(usYear,usMonthM,usDay,usHourM,usMin,0,0);
   var usDtStmp = usDt.getTime();
 
-  if(usSCW != '' && usMonth != '' && usDay != '' && usYear != '' && usHour !='' && usMin != ''){
+  if(usSCW != ''){
       var dataEntryS = {
          type: usType,
          Submitted: Date.now(),
