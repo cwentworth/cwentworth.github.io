@@ -43,7 +43,7 @@
   var SzrStmnt = '';
 
   firebase.initializeApp(config);
-  firebase.database().ref('activities').orderByValue().on("value", function(snapshot) {
+  firebase.database().ref('activities').orderByChild('dt').on("value", function(snapshot) {
     snapshot.forEach(function(data) {
       var item = data.val();
       item.key = data.key;
