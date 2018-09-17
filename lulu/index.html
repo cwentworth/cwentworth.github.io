@@ -45,80 +45,9 @@
   firebase.initializeApp(config);
   firebase.database().ref('activities').orderByValue().on("value", function(snapshot) {
     snapshot.forEach(function(data) {
-      var item1 = data.val();
-      item1.key = data.key;
-      if(item1.type=='medication' && item1.scw=='hotdog'){
-      mdcn.push(item1);
-      mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
-      cT = Date.now();
-      mxMdcnDtForm = new Date(mxMdcnDt);
+      var item = data.val();
+      item.key = data.key;
 
-<<<<<<< HEAD
-      // Date.prototype.addHours = function(h) {
-      //    this.setTime(this.getTime() + (h*60*60*1000));
-      //    return this;
-      // };
-=======
-      Date.prototype.addHours = function(h) {
-         this.setTime(this.getTime() + (h*60*60*1000));
-         return this;
-      };
-
-      MdcnDue = mxMdcnDtForm.addHours(12);
-      MdcnDue_raw = MdcnDue.getTime();
-<<<<<<< HEAD
->>>>>>> parent of fbc723c... var meth
-=======
->>>>>>> parent of fbc723c... var meth
-      deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
-      deltMdcn_s = deltMdcn_raw % 60;
-      deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
-      deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
-      deltMdcn_d = Math.floor(deltMdcn_raw / 86400);
-<<<<<<< HEAD
-<<<<<<< HEAD
-      MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
-=======
-=======
->>>>>>> parent of fbc723c... var meth
-
-      MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
-      MdcnDue_s = MdcnDue_raw_r % 60;
-      MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
-      MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
-
-      MdcnStmnt = '💊 ' + 'It has been ' + deltMdcn_h + ' hour(s) and ' + deltMdcn_m + ' minute(s) since Lulu last had her medication.';
-
-      if(MdcnDue_h < 1) {
-      MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_m + " minute(s)";
-      };
-
-      if(MdcnDue_h >= 1) {
-      MdcnInstructions = "Lulu's next dose is needed in about " + MdcnDue_h + " hour(s)";
-      };
-
->>>>>>> parent of fbc723c... var meth
-      if(document.getElementById('cp1') == null) {
-      var cp1 = document.createElement('p');
-      var ct1 = document.createTextNode(MdcnStmnt);
-      cp1.appendChild(ct1);
-      cp1.className = 'txt';
-      cp1.id = 'cp1';
-      document.body.appendChild(cp1);
-      };
-<<<<<<< HEAD
-=======
-
-     if(document.getElementById('cp2') == null) {
-     var cp2 = document.createElement('p');
-     var ct2 = document.createTextNode(MdcnInstructions);
-     cp2.appendChild(ct2);
-     cp2.className = 'txt';
-     cp2.id = 'cp2'
-     document.body.appendChild(cp2);
-     };
-
-    };
       if(item.type=='seizure' && item.scw=='hotdog'){
       szr.push(item);
       mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
@@ -138,7 +67,7 @@
       cp3.id = 'cp3'
       document.body.appendChild(cp3);
       };
->>>>>>> parent of fbc723c... var meth
+
       };
       // mxMdcnDtFormi = mxMdcnDtForm;
       // MdcnDue = mxMdcnDtFormi.addHours(12);
