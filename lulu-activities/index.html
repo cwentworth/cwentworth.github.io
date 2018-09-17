@@ -20,14 +20,14 @@
   let database = firebase.database();
   var cT = new Date(Date.now());
 </script>
-<p><script>document.write('today is ' + cT.toLocaleDateString());</script></p>
+<p><script>document.write('Today is ' + cT.toLocaleDateString());</script></p>
 <p>Logging seizure meds given in the past 10 - 20 minutes? Enter the control word and select the quick log button.</p>
 <form onSubmit="quickMedEntry()">
 <input type="text" name = "usSCW" id = "usSCW" placeholder="what is the control word"></input></br>
 <button type="button" onclick="quickMedEntry();">Quick Log - Seizure Meds</button>
 </form>
 <p>Logging something else including seizure meds given more than 20 minutes ago? Click the button below.</p>
-<button type="button" onclick="location.href='http://chriswentworth.com/lulu-activities/detail.html'">Enter detailed information</button>
+<button type="button" onclick="location.href='http://chriswentworth.com/lulu-activities/detail.html'">Enter Detailed Info</button>
 <script>
 var quickMedEntry = function() {
   var usType = 'seizure meds';
