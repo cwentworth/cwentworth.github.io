@@ -58,9 +58,8 @@
    });
    if(document.getElementById('cp1') == null) {
      mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
-     cT = Date.now();
      var mxMdcnDtForm = new Date(mxMdcnDt);
-     deltMdcn_raw = Math.abs(cT - mxMdcnDt) / 1000;
+     deltMdcn_raw = Math.abs(Date.now() - mxMdcnDt) / 1000;
      deltMdcn_s = deltMdcn_raw % 60;
      deltMdcn_m = Math.floor(deltMdcn_raw / 60) % 60;
      deltMdcn_h = Math.floor(deltMdcn_raw / 3600) % 24;
@@ -104,8 +103,7 @@
 
    if(document.getElementById('cp3') == null) {
      mxSzrDt = Math.max.apply(Math, szr.map(function(o) { return o.dt; }));
-     cT = Date.now();
-     deltSzr_raw = Math.abs(cT - mxSzrDt) / 1000;
+     deltSzr_raw = Math.abs(Date.now() - mxSzrDt) / 1000;
      deltSzr_s = deltSzr_raw % 60;
      deltSzr_m = Math.floor(deltSzr_raw / 60) % 60;
      deltSzr_h = Math.floor(deltSzr_raw / 3600) % 24;
