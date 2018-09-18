@@ -24,6 +24,7 @@
   var ftm = [];
   var mxMdcnDt = '';
   var mxSzrDt = '';
+  var mxFtmDt = '';
   var cT = '';
   var mxMdcnDtForm = '';
   var mxMdcnDtFormi = '';
@@ -45,6 +46,12 @@
   var deltSzr_h = '';
   var deltSzr_d = '';
   var SzrStmnt = '';
+  var deltFtm_raw = '';
+  var deltFtm_s = '';
+  var deltFtm_m = '';
+  var deltFtm_h = '';
+  var deltFtm_d = '';
+  var FtmStmnt = '';
 
   firebase.initializeApp(config);
   firebase.database().ref('activities').orderByChild('dt').on("value", function(snapshot) {
@@ -123,6 +130,22 @@
    cp3.className = 'txt';
    cp3.id = 'cp1';
    document.body.appendChild(cp3);
+   };
+
+   if(document.getElementById('cp4') == null) {
+     mxFtmDt = Math.max.apply(Math, ftm.map(function(o) { return o.dt; }));
+     deltFtm_raw = Math.abs(Date.now() - mxFtmDt) / 1000;
+     deltFtm_s = deltFtm_raw % 60;
+     deltFtm_m = Math.floor(deltFtm_raw / 60) % 60;
+     deltFtm_h = Math.floor(deltFtm_raw / 3600) % 24;
+     deltFtm_d = Math.floor(deltFtm_raw / 86400);
+     FtmStmnt = '🏥 It has been ' + deltFtm_d + ' day(s) ' + deltFtm_h + ' hour(s) and ' + deltFtm_m + ' minute(s) since Lulu last had her flea and tick medication.';
+   var cp4 = document.createElement('p');
+   var ct4 = document.createTextNode(FtmStmnt);
+   cp4.appendChild(ct4);
+   cp4.className = 'txt';
+   cp4.id = 'cp1';
+   document.body.appendChild(cp4);
    };
 });
   </script>
