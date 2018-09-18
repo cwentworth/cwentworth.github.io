@@ -55,6 +55,9 @@
       if(item.type=='seizure event' && item.scw=='hotdog'){
       szr.push(item);
       };
+      if(item.type=='heart worm meds' && item.scw=='hotdog'){
+      hwm.push(item);
+      };
    });
    if(document.getElementById('cp1') == null) {
      mxMdcnDt = Math.max.apply(Math, mdcn.map(function(o) { return o.dt; }));
