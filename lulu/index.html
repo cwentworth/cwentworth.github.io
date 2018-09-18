@@ -81,7 +81,7 @@
      mxMdcnDtFormi = mxMdcnDtForm;
      MdcnDue = mxMdcnDtFormi.addHours(12);
      MdcnDue_raw = MdcnDue.getTime();
-     MdcnDue_raw_r = Math.abs(MdcnDue_raw - cT) / 1000;
+     MdcnDue_raw_r = Math.abs(MdcnDue_raw - Date.now()) / 1000;
      MdcnDue_s = MdcnDue_raw_r % 60;
      MdcnDue_m = Math.floor(MdcnDue_raw_r / 60) % 60;
      MdcnDue_h = Math.floor(MdcnDue_raw_r / 3600) % 24;
