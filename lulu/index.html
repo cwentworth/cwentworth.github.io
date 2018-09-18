@@ -158,10 +158,10 @@
    if(document.getElementById('cp5') == null) {
      mxHwmDt = Math.max.apply(Math, hwm.map(function(o) { return o.dt; }));
      deltHwm_raw = Math.abs(Date.now() - mxHwmDt) / 1000;
-     deltHwm_s = deltFtm_raw % 60;
-     deltHwm_m = Math.floor(deltFtm_raw / 60) % 60;
-     deltHwm_h = Math.floor(deltFtm_raw / 3600) % 24;
-     deltHwm_d = Math.floor(deltFtm_raw / 86400);
+     deltHwm_s = deltHwm_raw % 60;
+     deltHwm_m = Math.floor(deltHwm_raw / 60) % 60;
+     deltHwm_h = Math.floor(deltHwm_raw / 3600) % 24;
+     deltHwm_d = Math.floor(deltHwm_raw / 86400);
      HwmStmnt = '❤️ It has been ' + deltHwm_d + ' day(s) ' + deltHwm_h + ' hour(s) and ' + deltHwm_m + ' minute(s) since Lulu last had her heartworm medication.';
    var cp5 = document.createElement('p');
    var ct5 = document.createTextNode(HwmStmnt);
