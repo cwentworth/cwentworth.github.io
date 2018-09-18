@@ -25,6 +25,7 @@
   var mxMdcnDt = '';
   var mxSzrDt = '';
   var mxFtmDt = '';
+  var mxHwmDt = '';
   var cT = '';
   var mxMdcnDtForm = '';
   var mxMdcnDtFormi = '';
@@ -52,6 +53,12 @@
   var deltFtm_h = '';
   var deltFtm_d = '';
   var FtmStmnt = '';
+  var deltHwm_raw = '';
+  var deltHwm_s = '';
+  var deltHwm_m = '';
+  var deltHwm_h = '';
+  var deltHwm_d = '';
+  var HwmStmnt = '';
 
   firebase.initializeApp(config);
   firebase.database().ref('activities').orderByChild('dt').on("value", function(snapshot) {
@@ -146,6 +153,22 @@
    cp4.className = 'txt';
    cp4.id = 'cp1';
    document.body.appendChild(cp4);
+   };
+
+   if(document.getElementById('cp5') == null) {
+     mxHwmDt = Math.max.apply(Math, ftm.map(function(o) { return o.dt; }));
+     deltHwm_raw = Math.abs(Date.now() - mxHwmDt) / 1000;
+     deltHwm_s = deltFtm_raw % 60;
+     deltHwm_m = Math.floor(deltFtm_raw / 60) % 60;
+     deltHwm_h = Math.floor(deltFtm_raw / 3600) % 24;
+     deltHwm_d = Math.floor(deltFtm_raw / 86400);
+     HwmStmnt = '❤️ It has been ' + deltHwm_d + ' day(s) ' + deltHwm_h + ' hour(s) and ' + deltHwm_m + ' minute(s) since Lulu last had her heartworm medication.';
+   var cp5 = document.createElement('p');
+   var ct5 = document.createTextNode(HwmStmnt);
+   cp5.appendChild(ct4);
+   cp5.className = 'txt';
+   cp5.id = 'cp1';
+   document.body.appendChild(cp5);
    };
 });
   </script>
