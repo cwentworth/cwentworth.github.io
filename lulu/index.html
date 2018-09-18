@@ -156,7 +156,7 @@
    };
 
    if(document.getElementById('cp5') == null) {
-     mxHwmDt = Math.max.apply(Math, ftm.map(function(o) { return o.dt; }));
+     mxHwmDt = Math.max.apply(Math, hwm.map(function(o) { return o.dt; }));
      deltHwm_raw = Math.abs(Date.now() - mxHwmDt) / 1000;
      deltHwm_s = deltFtm_raw % 60;
      deltHwm_m = Math.floor(deltFtm_raw / 60) % 60;
