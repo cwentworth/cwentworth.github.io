@@ -1,5 +1,5 @@
-html { 
-/*background: url(images/crw_newBG.JPG) no-repeat center center fixed; 
+html {
+/*background: url(images/crw_newBG.JPG) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -54,6 +54,8 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: #00ff89;
+    margin-top: 0;
+
 }
 
 /* selected link */
