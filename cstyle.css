@@ -31,7 +31,7 @@ font-size: 3em;
 .left a{
 text-decoration: none;
 }
-.left h1 a:hover{
+.left h1:hover{
 margin-top: 30;
 }
 .right a{
