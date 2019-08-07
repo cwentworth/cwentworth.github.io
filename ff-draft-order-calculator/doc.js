@@ -67,3 +67,14 @@ summary = {}
 for (t in teams) {
    summary[t] = teamDict
 }
+
+trials = 10
+function go() {
+  start = 0
+  while (start < trials)
+     draft = populate()
+     for (pick in draft) {
+        selection = draft[pick]
+        summary[pick][selection] =+ 1
+  }
+}
