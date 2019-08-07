@@ -1,0 +1,4 @@
+<html>
+<script source="doc.js">
+<script>
+</html>
