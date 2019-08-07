@@ -7,7 +7,7 @@ var teams = ['team12','team11',
 ];
 
 var weights = [
-12,11,
+120,11,
 10,9,
 8,7,
 6,5,
