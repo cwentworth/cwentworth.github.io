@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from datetime import timedelta
 import matplotlib.pyplot as plt
+from subprocess import call
 
 
 wks = [
@@ -302,3 +303,17 @@ with open("index.html", "wb") as file:
     file.write(htmlFinal)
 
 print(meechPoolSummary)
+
+datetime.now()
+
+#Commit Message
+commit_message = "update" + str(datetime.now())
+
+#Stage the file
+call('git add .', shell = True)
+
+# Add your commit
+call('git commit -m "'+ commit_message +'"', shell = True)
+
+#Push the new or update files
+call('git push origin master', shell = True)
