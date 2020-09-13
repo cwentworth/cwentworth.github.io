@@ -297,9 +297,8 @@ updatedField = "<p>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + 
 updatedFields = BeautifulSoup(updatedField)
 
 body.append(secondTableHeader)
-body.append(updatedFields)
-
 body.append(picksTableHtmls)
+body.append(updatedFields)
 f.close()
 
 htmlFinal = hc.prettify("utf-8")
