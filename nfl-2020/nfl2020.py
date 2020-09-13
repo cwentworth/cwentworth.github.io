@@ -280,6 +280,9 @@ picksTable.decompose()
 updateField = hc.find('p',attrs={'id':'updates'})
 updateField.decompose()
 
+headTwo = hc.find('h2',attrs={'id':'secondH'})
+headTwo.decompose()
+
 teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
 picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml)
@@ -296,6 +299,10 @@ body.append(standingsHtmls)
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
 updatedFields = BeautifulSoup(updatedField)
 
+secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
+secondHeads = BeautifulSoup(secondHead)
+
+body.append(secondHeads)
 body.append(picksTableHtmls)
 body.append(updatedFields)
 f.close()
