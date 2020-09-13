@@ -290,13 +290,9 @@ body = hc.find('body')
 
 body.append(standingsHtmls)
 
-secondth = "<h2><br></br>Pick Summary</h2>"
-secondTableHeader = BeautifulSoup(secondth)
-
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
 updatedFields = BeautifulSoup(updatedField)
 
-body.append(secondTableHeader)
 body.append(picksTableHtmls)
 body.append(updatedFields)
 f.close()
