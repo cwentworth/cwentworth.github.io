@@ -145,8 +145,10 @@ for wk in wks:
                     wwins = wwins + 1
                     meechPoolSummary[wk]=wwins
 
-
-
+mpTotal = []
+for wk in wks:
+    if wk in meechPoolSummary.keys():
+        mpTotal.append(meechPoolSummary[wk])
 
 
 
@@ -327,3 +329,5 @@ call('git push origin master', shell = True)
 print('-----------------------------')
 print('meech pool summary:')
 print(meechPoolSummary)
+print("total wins: " + str(sum(mpTotal)) + "/ total potential wins: " + str(sum(winsAll)))
+print(str(sum(mpTotal)/sum(winsAll)))
