@@ -293,7 +293,11 @@ body.append(standingsHtmls)
 secondth = "<h2><br></br>Pick Summary</h2>"
 secondTableHeader = BeautifulSoup(secondth)
 
+updatedField = "<p>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
+updatedFields = BeautifulSoup(updatedField)
+
 body.append(secondTableHeader)
+body.append(updatedFields)
 
 body.append(picksTableHtmls)
 f.close()
@@ -304,10 +308,10 @@ with open("index.html", "wb") as file:
 
 print(meechPoolSummary)
 
-datetime.now()
+
 
 #Commit Message
-commit_message = "update" + str(datetime.now())
+commit_message = "update" + str(datetime.now().strftime('%Y-%m-%d'))
 
 #Stage the file
 call('git add .', shell = True)
