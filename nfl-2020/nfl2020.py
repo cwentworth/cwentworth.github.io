@@ -311,9 +311,6 @@ htmlFinal = hc.prettify("utf-8")
 with open("index.html", "wb") as file:
     file.write(htmlFinal)
 
-print(meechPoolSummary)
-
-
 
 #Commit Message
 commit_message = "update" + str(datetime.now().strftime('%Y-%m-%d'))
@@ -326,3 +323,6 @@ call('git commit -m "'+ commit_message +'"', shell = True)
 
 #Push the new or update files
 call('git push origin master', shell = True)
+
+print('-----------------------------')
+print(meechPoolSummary)
