@@ -293,7 +293,7 @@ body.append(standingsHtmls)
 secondth = "<h2><br></br>Pick Summary</h2>"
 secondTableHeader = BeautifulSoup(secondth)
 
-updatedField = "<p>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
+updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
 updatedFields = BeautifulSoup(updatedField)
 
 body.append(secondTableHeader)
