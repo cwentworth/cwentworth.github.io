@@ -325,4 +325,5 @@ call('git commit -m "'+ commit_message +'"', shell = True)
 call('git push origin master', shell = True)
 
 print('-----------------------------')
+print('meech pool summary:')
 print(meechPoolSummary)
