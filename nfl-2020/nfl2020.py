@@ -277,6 +277,9 @@ standingsTable.decompose()
 picksTable = hc.find('table',attrs={'id':'teamPicks'})
 picksTable.decompose()
 
+updateField = hc.find('p',attrs={'id':'updates'})
+updateField.decompose()
+
 teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
 picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml)
