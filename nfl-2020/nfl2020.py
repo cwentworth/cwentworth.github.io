@@ -289,7 +289,7 @@ body = hc.find('body')
 
 body.append(standingsHtmls)
 
-secondth = "<h2>Pick Summary</h2>"
+secondth = "<h2><br></br>Pick Summary</h2>"
 secondTableHeader = BeautifulSoup(secondth)
 
 body.append(secondTableHeader)
