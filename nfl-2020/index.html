@@ -1,0 +1,354 @@
+<html>
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
+  <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+  <script charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js" type="text/javascript">
+   <script charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <script>
+   $(document).ready( function () {
+     $('#standings').DataTable(
+       {
+         "paging": false,
+         "searching": false,
+         "sort":false,
+         "bInfo" : false
+       }
+     );
+ } );
+  </script>
+  <script>
+   $(document).ready( function () {
+     $('#teamPicks').DataTable(
+       {
+         "paging": false,
+         "searching": false,
+         "bInfo" : false
+       }
+     );
+ } );
+  </script>
+  <h1>
+   2020 NFL Total Wins Pool
+  </h1>
+  <table border="1" class="dataframe compact hover stripe" id="standings">
+   <thead>
+    <tr style="text-align: center;">
+     <th>
+     </th>
+     <th>
+      Wins - Chris
+     </th>
+     <th>
+      Wins - Dennis
+     </th>
+     <th>
+      Wins - Matt
+     </th>
+    </tr>
+    <tr>
+     <th>
+      Week
+     </th>
+     <th>
+     </th>
+     <th>
+     </th>
+     <th>
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <th>
+      1
+     </th>
+     <td>
+      0
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      0
+     </td>
+    </tr>
+    <tr>
+     <th>
+      Total
+     </th>
+     <td>
+      0
+     </td>
+     <td>
+      1
+     </td>
+     <td>
+      0
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h2>
+   Pick Summary
+  </h2>
+  <table border="1" class="dataframe compact hover stripe" id="teamPicks">
+   <thead>
+    <tr style="text-align: center;">
+     <th>
+      Team
+     </th>
+     <th>
+      Player
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      Kansas City Chiefs
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Green Bay Packers
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Philadelphia Eagles
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Pittsburgh Steelers
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Minnesota Vikings
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tennessee Titans
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Denver Broncos
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Miami Dolphins
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Arizona Cardinals
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Los Angeles Chargers
+     </td>
+     <td>
+      Dennis
+     </td>
+    </tr>
+    <tr>
+     <td>
+      San Francisco 49ers
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Buffalo Bills
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Dallas Cowboys
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Indianapolis Colts
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Cleveland Browns
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Houston Texans
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Las Vegas Raiders
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Detroit Lions
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Cincinnati Bengals
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Washington Football Team
+     </td>
+     <td>
+      Chris
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Baltimore Ravens
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      New Orleans Saints
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Seattle Seahawks
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tampa Bay Buccaneers
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      New England Patriots
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Chicago Bears
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Los Angeles Rams
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Atlanta Falcons
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      New York Giants
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Carolina Panthers
+     </td>
+     <td>
+      Matt
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

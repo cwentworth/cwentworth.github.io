@@ -1,0 +1,29 @@
+html{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+td
+{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#standings
+{
+  width: 500px;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+th {
+  font-family: sans-serif;
+}
