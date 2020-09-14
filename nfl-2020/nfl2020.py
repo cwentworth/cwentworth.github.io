@@ -326,7 +326,9 @@ call('git commit -m "'+ commit_message +'"', shell = True)
 #Push the new or update files
 call('git push origin master', shell = True)
 
-print('-----------------------------')
+print('*****************************')
+print('*****************************')
+print('*****************************')
 print('meech pool summary:')
 print(meechPoolSummary)
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
