@@ -85,7 +85,22 @@ meechPoolPicks = {
 'Denver Broncos'
 ],
 "week_2":[
-''
+'Cincinnati Bengals',
+'Minnesota Vikings',
+'Chicago Bears',
+'Tampa Bay Buccaneers',
+'Denver Broncos',
+'Philadelphia Eagles',
+'Tennessee Titans',
+'San Francisco 49ers',
+'Buffalo Bills',
+'Detroit Lions',
+'Dallas Cowboys',
+'Arizona Cardinals'
+'Kansas City Chiefs',
+'Baltimore Ravens',
+'Seattle Seahawks',
+'New Orleans Saints'
 ],
 "week_3":[
 ''
