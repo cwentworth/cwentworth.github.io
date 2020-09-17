@@ -96,7 +96,7 @@ meechPoolPicks = {
 'Buffalo Bills',
 'Detroit Lions',
 'Dallas Cowboys',
-'Arizona Cardinals'
+'Arizona Cardinals',
 'Kansas City Chiefs',
 'Baltimore Ravens',
 'Seattle Seahawks',
