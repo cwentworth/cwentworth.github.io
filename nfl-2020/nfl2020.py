@@ -103,7 +103,22 @@ meechPoolPicks = {
 'New Orleans Saints'
 ],
 "week_3":[
-''
+'Jacksonville Jaguars',
+'Las Vegas Raiders',
+'Buffalo Bills',
+'Pittsburgh Steelers',
+'San Francisco 49ers',
+'Minnesota Vikings',
+'Cleveland Browns',
+'Cincinnati Bengals',
+'Chicago Bears',
+'Indianapolis Colts',
+'Los Angeles Chargers',
+'Arizona Cardinals',
+'Tampa Bay Buccaneers',
+'Seattle Seahawks',
+'New Orleans Saints',
+'Baltimore Ravens'
 ],
 "week_4":[
 ''
