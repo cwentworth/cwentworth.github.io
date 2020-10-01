@@ -121,7 +121,21 @@ meechPoolPicks = {
 'Baltimore Ravens'
 ],
 "week_4":[
-''
+'Denver Broncos',
+'Indianapolis Colts',
+'New Orleans Saints',
+'Arizona Cardinals',
+'Cincinnati Bengals',
+'Dallas Cowboys',
+'Houston Texans',
+'Seattle Seahawks',
+'Tampa Bay Buccaneers',
+'Baltimore Ravens',
+'Los Angeles Rams',
+'New England Patriots',
+'Buffalo Bills',
+'San Francisco 49ers',
+'Green Bay Packers'
 ],
 "week_5":[
 ''
