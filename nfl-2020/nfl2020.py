@@ -388,11 +388,8 @@ print('*****************************')
 print('*****************************')
 print('*****************************')
 print('meech pool summary:')
-print(meechPoolSummary)
+for key in meechPoolSummary:
+    print(key + ': ' + meechPoolSummary[key] + ' / ' + len(meechPoolPicks[key]))
+print('*****************************')
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
-
-for key in meechPoolSummary:
-    print(key + ':')
-    print(meechPoolSummary[key])
-    print(len(meechPoolPicks[key]))
