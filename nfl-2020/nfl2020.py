@@ -138,7 +138,21 @@ meechPoolPicks = {
 'Green Bay Packers'
 ],
 "week_5":[
-''
+'Tampa Bay Buccaneers',
+'Carolina Panthers',
+'Kansas City Chiefs',
+'New England Patriots',
+'Los Angeles Rams',
+'Jacksonville Jaguars',
+'Buffalo Bills',
+'Arizona Cardinals',
+'Pittsburgh Steelers',
+'Baltimore Ravens',
+'San Francisco 49ers',
+'Dallas Cowboys',
+'Cleveland Browns',
+'Seattle Seahawks',
+'New Orleans Saints'
 ],
 "week_6":[
 ''
