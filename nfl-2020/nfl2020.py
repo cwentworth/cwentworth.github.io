@@ -391,3 +391,7 @@ print('meech pool summary:')
 print(meechPoolSummary)
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
+
+for key in meechPoolSummary:
+    print(key + ':')
+    print(meechPoolSummary[key])
