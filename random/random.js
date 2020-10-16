@@ -18,6 +18,11 @@ function makeid(length) {
 outputTxtCode = document.createTextNode('code: ' + makeid(4) + '-' + makeid(4) + '-' + makeid(4))
 outputPinCode = document.createTextNode('pin: ' + randomDraw(0,9) + randomDraw(0,9) + randomDraw(0,9) + randomDraw(0,9))
 
+colors = ['red','yellow','blue','orange','green','violet']
+outputColors = document.createTextNode('color: ' + colors[randomDraw(0,colors.length)])
+
+
+
 animals = ['cat',
 'dog',
 'bird',
@@ -98,7 +103,6 @@ outputNFLTeam = document.createTextNode('nfl team: ' + nflTeams[randomDraw(0,nfl
 coinFlip = ['heads','tails']
 outputCoinFlip = document.createTextNode('coin flip: ' + coinFlip[randomDraw(0,coinFlip.length)])
 
-
 window.onload = function(){
     document.querySelector('#disp').appendChild(outputAnimals);
     document.querySelector('#disp').appendChild(document.createElement("br"));
@@ -113,4 +117,9 @@ window.onload = function(){
     document.querySelector('#disp').appendChild(outputNFLTeam);
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputCoinFlip);
+    document.querySelector('#disp').appendChild(document.createElement("br"));
+    document.querySelector('#disp').appendChild(outputColors);
 }
+
+
+
