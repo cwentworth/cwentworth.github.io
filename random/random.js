@@ -95,7 +95,7 @@ nflTeams = [
 outputNFLTeam = document.createTextNode('nfl team: ' + nflTeams[randomDraw(0,nflTeams.length)])
 
 coinFlip = ['heads','tails']
-outputCoinFlip = document.createTextNode('coin flip: ' + outputCoinFlip[randomDraw(0,outputCoinFlip.length)])
+outputCoinFlip = document.createTextNode('coin flip: ' + coinFlip[randomDraw(0,coinFlip.length)])
 
 
 window.onload = function(){
