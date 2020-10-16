@@ -94,6 +94,9 @@ nflTeams = [
     ]
 outputNFLTeam = document.createTextNode('nfl team: ' + nflTeams[randomDraw(0,nflTeams.length)])
 
+coinFlip =['heads','tails']
+outputCoinFlip = document.createTextNode('coin flip: ' + outputCoinFlip[randomDraw(0,outputCoinFlip.length)])
+
 
 window.onload = function(){
     document.querySelector('#disp').appendChild(outputAnimals);
@@ -105,4 +108,6 @@ window.onload = function(){
     document.querySelector('#disp').appendChild(outputSingleNumber);
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputNFLTeam);
+    document.querySelector('#disp').appendChild(document.createElement("br"));
+    document.querySelector('#disp').appendChild(outputCoinFlip);
 }
