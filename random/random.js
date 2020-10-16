@@ -94,7 +94,7 @@ nflTeams = [
     ]
 outputNFLTeam = document.createTextNode('nfl team: ' + nflTeams[randomDraw(0,nflTeams.length)])
 
-coinFlip =['heads','tails']
+coinFlip = ['heads','tails']
 outputCoinFlip = document.createTextNode('coin flip: ' + outputCoinFlip[randomDraw(0,outputCoinFlip.length)])
 
 
