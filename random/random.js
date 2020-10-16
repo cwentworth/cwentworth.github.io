@@ -95,7 +95,7 @@ nflTeams = [
 outputNFLTeam = document.createTextNode('nfl team: ' + nflTeams[randomDraw(0,nflTeams.length)])
 
 
-function goGo(){
+window.onload = function(){
     document.querySelector('#disp').appendChild(outputAnimals);
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputFoods);
@@ -106,5 +106,3 @@ function goGo(){
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputNFLTeam);
 }
-
-window.onload = goGo();
