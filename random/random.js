@@ -16,6 +16,8 @@ function makeid(length) {
     return result;
 }
 outputTxtCode = document.createTextNode('code: ' + makeid(4) + '-' + makeid(4) + '-' + makeid(4))
+outputPinCode = document.createTextNode('pin: ' + randomDraw(0,9) + randomDraw(0,9) +
+                                        randomDraw(0,9) + randomDraw(0,9) + )
 
 animals = ['cat',
 'dog',
