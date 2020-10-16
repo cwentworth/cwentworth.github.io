@@ -107,6 +107,8 @@ window.onload = function(){
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputTxtCode);
     document.querySelector('#disp').appendChild(document.createElement("br"));
+    document.querySelector('#disp').appendChild(outputPinCode);
+    document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputSingleNumber);
     document.querySelector('#disp').appendChild(document.createElement("br"));
     document.querySelector('#disp').appendChild(outputNFLTeam);
