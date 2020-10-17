@@ -155,7 +155,20 @@ meechPoolPicks = {
 'New Orleans Saints'
 ],
 "week_6":[
-''
+'Chicago Bears',
+'Detroit Lions',
+'Atlanta Falcons',
+'Tennessee Titans',
+'Washington Football Team',
+'Cleveland Browns',
+'Baltimore Ravens',
+'Indianapolis Colts',
+'Tampa Bay Buccaneers',
+'San Francisco 49ers',
+'Miami Dolphins',
+'New England Patriots',
+'Arizona Cardinals',
+'Buffalo Bills'
 ],
 "week_7":[
 ''
