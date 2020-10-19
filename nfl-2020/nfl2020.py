@@ -406,3 +406,6 @@ for key in meechPoolSummary:
 print('*****************************')
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
+
+# for i in meechPoolPicks["week_6"]:
+#     print(i)
