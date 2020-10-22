@@ -171,7 +171,20 @@ meechPoolPicks = {
 'Buffalo Bills'
 ],
 "week_7":[
-''
+'Philadelphia Eagles',
+'Cleveland Browns',
+'Dallas Cowboys',
+'Detroit Lions',
+'New Orleans Saints',
+'Buffalo Bills',
+'Green Bay Packers',
+'Seattle Seahawks',
+'San Francisco 49ers',
+'Kansas City Chiefs',
+'Las Vegas Raiders',
+'Tennessee Titans',
+'Los Angeles Chargers',
+'Los Angeles Rams'
 ],
 "week_8":[
 ''
