@@ -39,3 +39,7 @@ td, th, table{
 font-family: sans-serif;
 text-align: center;
 }
+
+tr.selected{
+  background-color: aquamarine;
+}
