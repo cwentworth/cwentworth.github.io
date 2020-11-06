@@ -211,7 +211,7 @@ meechPoolPicks = {
 'Baltimore Ravens',
 'Kansas City Chiefs',
 'Houston Texans',
-'Washington Football Team'
+'Washington Football Team',
 'Los Angeles Chargers',
 'Pittsburgh Steelers',
 'Arizona Cardinals',
