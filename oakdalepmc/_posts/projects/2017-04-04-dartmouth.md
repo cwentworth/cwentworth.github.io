@@ -1,0 +1,38 @@
+---
+layout: listing
+permalink: /:title/
+category: projects
+
+meta:
+  keywords: ""
+
+project:
+  title: "Dartmouth St"
+  logo: "/assets/images/projects/dartmouth/1.jpg"
+
+unit:
+  type: "3 Beds / 2 Bath"
+  name: "Dartmouth Street Apartment"
+  location: "Oakdale Neighborhood"
+  details: "3 Bedrooms - 2 Bathrooms"
+  rent: "$1,900 / Month - 12-month lease"
+  availability: "July 1st"
+  amenities: "Washer/Dryer, Patio, Parking for 2 cars."
+  availability-calendar: "https://calendar.google.com/calendar/htmlembed?src=nhl_1_%2542oston%2B%2542ruins%23sports%40group.v.calendar.google.com&ctz=America%2FNew_York"
+
+
+images:
+  - image:
+    url: "/assets/images/projects/dartmouth/1.jpg"
+  - image:
+    url: "/assets/images/projects/dartmouth/2.jpg"
+  - image:
+    url: "/assets/images/projects/dartmouth/3.jpg"
+  - image:
+    url: "/assets/images/projects/dartmouth/4.jpg"
+  - image:
+    url: "/assets/images/projects/dartmouth/5.jpg"
+  - image:
+    url: "/assets/images/projects/dartmouth/6.jpg"
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue tortor ac tortor lobortis congue. Vivamus laoreet eleifend porta. Duis vestibulum vitae nisl ac tempus. Praesent varius, nisi sed dapibus mattis, magna nibh iaculis tortor, eget pharetra sapien arcu at diam. Mauris id mattis magna, eu scelerisque enim. Vestibulum non augue cursus ante blandit commodo. Nam lacinia sit amet neque a blandit. Sed feugiat justo leo, quis vehicula urna imperdiet et. Donec vitae velit enim. Phasellus nec risus eu nisi convallis vulputate. Mauris lectus lectus, cursus ac imperdiet ac, malesuada id orci. Curabitur egestas volutpat lacus.

@@ -1,0 +1,14 @@
+# User config
+author: "Oakdale PMC"
+tagline: "Rentals in Portland, Maine"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue tortor ac tortor lobortis congue. Vivamus laoreet eleifend porta. Duis vestibulum vitae nisl ac tempus. Praesent varius, nisi sed dapibus mattis, magna nibh iaculis tortor, eget pharetra sapien arcu at diam. Mauris id mattis magna, eu scelerisque enim. Vestibulum non augue cursus ante blandit commodo. Nam lacinia sit amet neque a blandit. Sed feugiat justo leo, quis vehicula urna imperdiet et. Donec vitae velit enim. Phasellus nec risus eu nisi convallis vulputate. Mauris lectus lectus, cursus ac imperdiet ac, malesuada id orci. Curabitur egestas volutpat lacus."
+keywords: ""
+email: "hello@emailaddress.com"
+rentpayurl: "https://cozy.co/"
+
+# Site config
+baseurl: "/oakdalepmc"
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
