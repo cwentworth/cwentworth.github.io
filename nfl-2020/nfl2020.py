@@ -203,7 +203,7 @@ meechPoolPicks = {
 'Tampa Bay Buccaneers'
 ],
 "week_9":[
-'Green Bay Packers',
+'San Francisco 49ers',
 'Buffalo Bills',
 'Denver Broncos',
 'Tennessee Titans',
