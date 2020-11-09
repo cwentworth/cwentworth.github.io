@@ -7,7 +7,7 @@ email: "hello@emailaddress.com"
 rentpayurl: "https://cozy.co/"
 
 # Site config
-baseurl: "/oakdalepmc"
+baseurl: ""
 highlighter: rouge
 sass:
   sass_dir: assets/scss
