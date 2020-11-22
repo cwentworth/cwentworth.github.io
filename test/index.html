@@ -1,44 +1,111 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ site.tagline }}</title>
-	<meta name="author" content="{{ site.author }}">
-	<meta name="description" content="{{ site.description }}">
-	<meta name="keywords" content="{{ site.keywords }}">
-	{% include head.html %}
+	<title>Oakdale PMC / Rentals in Portland, Maine</title>
+	<meta name="author" content="Oakdale PMC">
+	<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue tortor ac tortor lobortis congue. Vivamus laoreet eleifend porta. Duis vestibulum vitae nisl ac tempus. Praesent varius, nisi sed dapibus mattis, magna nibh iaculis tortor, eget pharetra sapien arcu at diam. Mauris id mattis magna, eu scelerisque enim. Vestibulum non augue cursus ante blandit commodo. Nam lacinia sit amet neque a blandit. Sed feugiat justo leo, quis vehicula urna imperdiet et. Donec vitae velit enim. Phasellus nec risus eu nisi convallis vulputate. Mauris lectus lectus, cursus ac imperdiet ac, malesuada id orci. Curabitur egestas volutpat lacus.">
+	<meta name="keywords" content="">
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/testing/assets/css/style.css">
 </head>
 <body>
-	{% include header.html %}
+	<header class="header">
+	<div class="container">
+		<h1 class="logo">
+			<a title="Oakdale PMC" href="/testing/">Oakdale PMC</a>
+		</h1>
+	</div>
+</header>
 	<main class="content">
 		<section class="intro">
 			<div class="container">
-				<h2>About {{ site.author }}</h2>
-				<p>{{ site.description }}</p>
+				<h2>About Oakdale PMC</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue tortor ac tortor lobortis congue. Vivamus laoreet eleifend porta. Duis vestibulum vitae nisl ac tempus. Praesent varius, nisi sed dapibus mattis, magna nibh iaculis tortor, eget pharetra sapien arcu at diam. Mauris id mattis magna, eu scelerisque enim. Vestibulum non augue cursus ante blandit commodo. Nam lacinia sit amet neque a blandit. Sed feugiat justo leo, quis vehicula urna imperdiet et. Donec vitae velit enim. Phasellus nec risus eu nisi convallis vulputate. Mauris lectus lectus, cursus ac imperdiet ac, malesuada id orci. Curabitur egestas volutpat lacus.</p>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
 				<h2>Our Properties</h2>
 				<ul class="projects-list">
-					{% for item in site.categories.projects reversed %}
+					
 						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
+							<a href="/testing/fesseden/">
 								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									<img src="/testing/assets/images/projects/fessenden/1.jpg" alt="Fessenden St" />
 								</div>
-								<span class="h2">{{ item.unit.type }}</span>
-								<h3>{{ item.project.title }}</h3>
+								<span class="h2">3 Beds / 2 Bath</span>
+								<h3>Fessenden St</h3>
 							</a>
 						</li>
-					{% endfor %}
+					
+						<li>
+							<a href="/testing/pitt/">
+								<div class="img-wrapper">
+									<img src="/testing/assets/images/projects/pitt/1.jpg" alt="Pitt St" />
+								</div>
+								<span class="h2">3 Beds / 2 Bath</span>
+								<h3>Pitt St</h3>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/testing/william/">
+								<div class="img-wrapper">
+									<img src="/testing/assets/images/projects/william/1.jpg" alt="William St" />
+								</div>
+								<span class="h2">3 Beds / 2 Bath</span>
+								<h3>William St</h3>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/testing/dartmouth/">
+								<div class="img-wrapper">
+									<img src="/testing/assets/images/projects/dartmouth/1.jpg" alt="Dartmouth St" />
+								</div>
+								<span class="h2">3 Beds / 2 Bath</span>
+								<h3>Dartmouth St</h3>
+							</a>
+						</li>
+					
+						<li>
+							<a href="/testing/noyes/">
+								<div class="img-wrapper">
+									<img src="/testing/assets/images/projects/noyes/1.jpg" alt="Noyes St" />
+								</div>
+								<span class="h2">3 Beds / 2 Bath</span>
+								<h3>Noyes St</h3>
+							</a>
+						</li>
+					
 				</ul>
 			</div>
 		</section>
 	</main>
-	{% include footer.html %}
-	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+	<footer class="footer">
+	<div class="container">
+		<section class="contact">
+			<h2>Contact Us</h2>
+			<a title="hello@emailaddress.com" href="mailto:hello@emailaddress.com">hello@emailaddress.com</a>
+		</section>
+		<section class="follow">
+			<h2>Resources</h2>
+			<ul>
+				<li><a title="Pay Rent" href="https://cozy.co/" target="_blank">Pay Rent Online</a></li>
+			</ul>
+		</section>
+	</div>
+</footer>
+	<script src="/testing/assets/scripts/vendor/scrollreveal.min.js"></script>
+	<script src="/testing/assets/scripts/home.js"></script>
 </body>
 </html>
