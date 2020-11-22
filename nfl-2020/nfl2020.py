@@ -238,6 +238,7 @@ meechPoolPicks = {
 'Arizona Cardinals',
 'Cleveland Browns',
 'New Orleans Saints',
+'Detroit Lions',
 'New England Patriots',
 'Pittsburgh Steelers',
 'Cincinnati Bengals',
