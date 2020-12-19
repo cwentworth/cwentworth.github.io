@@ -304,8 +304,20 @@ meechPoolPicks = {
 'Baltimore Ravens'
 ],
 "week_15":[
-''
-],
+'Green Bay Packers',
+'San Francisco 49ers',
+'Seattle Seahawks',
+'Minnesota Vikings',
+'Miami Dolphins',
+'Baltimore Ravens',
+'Atlanta Falcons',
+'Tennessee Titans',
+'Indianapolis Colts',
+'Arizona Cardinals',
+'Los Angeles Rams',
+'Kansas City Chiefs',
+'Cleveland Browns',
+'Pittsburgh Steelers'],
 "week_16":[
 ''
 ],
