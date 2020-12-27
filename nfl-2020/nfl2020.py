@@ -319,7 +319,22 @@ meechPoolPicks = {
 'Cleveland Browns',
 'Pittsburgh Steelers'],
 "week_16":[
-''
+'New Orleans Saints',
+'Tampa Bay Buccaneers',
+'Arizona Cardinals',
+'Miami Dolphins',
+'Los Angeles Chargers',
+'Cleveland Browns',
+'Houston Texans',
+'Pittsburgh Steelers',
+'Chicago Bears',
+'Washington Football Team',
+'Baltimore Ravens',
+'Kansas City Chiefs',
+'Seattle Seahawks',
+'Dallas Cowboys',
+'Tennessee Titans',
+'New England Patriots'
 ],
 "week_17":[
 ''
