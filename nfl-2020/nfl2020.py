@@ -338,7 +338,22 @@ meechPoolPicks = {
 'New England Patriots'
 ],
 "week_17":[
-''
+'Buffalo Bills',
+'Baltimore Ravens',
+'Cleveland Browns',
+'Indianapolis Colts',
+'Tennessee Titans',
+'Dallas Cowboys',
+'Washington Football Team'
+'Green Bay Packers',
+'Arizona Cardinals',
+'Tampa Bay Buccaneers',
+'San Francisco 49ers',
+'New Orleans Saints',
+'Los Angeles Chargers',
+'Minnesota Vikings',
+'Las Vegas Raiders',
+'New England Patriots'
 ]
 }
 
@@ -544,5 +559,5 @@ print('*****************************')
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
 
-for i in meechPoolPicks["week_16"]:
+for i in meechPoolPicks["week_17"]:
     print(i)
