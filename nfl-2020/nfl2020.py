@@ -304,6 +304,9 @@ meechPoolPicks = {
 'Baltimore Ravens'
 ],
 "week_15":[
+'Buffalo Bills',
+'Los Angeles Chargers',
+# missed picks for first games, buffalo and lac auto selected as favorites
 'Green Bay Packers',
 'San Francisco 49ers',
 'Seattle Seahawks',
@@ -344,7 +347,7 @@ meechPoolPicks = {
 'Indianapolis Colts',
 'Tennessee Titans',
 'Dallas Cowboys',
-'Washington Football Team'
+'Washington Football Team',
 'Green Bay Packers',
 'Arizona Cardinals',
 'Tampa Bay Buccaneers',
