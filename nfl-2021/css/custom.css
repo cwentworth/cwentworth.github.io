@@ -1,0 +1,45 @@
+html{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+td
+{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#standings {
+  width: 500px !Important;
+}
+
+#teamPicks {
+  width: 500px !Important;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+th {
+  font-family: sans-serif;
+}
+
+td, th, table{
+   border:none;
+}
+
+#updates {
+font-family: sans-serif;
+text-align: center;
+}
+
+#standings tbody tr.selected {
+  background-color: aqua;
+}
