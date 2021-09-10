@@ -6,6 +6,7 @@ from datetime import datetime
 from datetime import timedelta
 import matplotlib.pyplot as plt
 from subprocess import call
+import os
 
 
 wks = [
@@ -33,7 +34,7 @@ season = {}
 winsAll = []
 
 for wk in wks:
-  u = str("https://www.pro-football-reference.com/years/2020/" + wk + ".htm")
+  u = str("https://www.pro-football-reference.com/years/2021/" + wk + ".htm")
   r  = requests.get(u)
   data = r.text
   soup = BeautifulSoup(data)
@@ -266,6 +267,12 @@ with open("index.html", "wb") as file:
     file.write(htmlFinal)
 
 
+patLoc = open("/Users/kennylofton/Documents/projects/ghpat.txt","r")
+pat = patLoc.read()
+print(pat)
+
+os.chdir('/Users/kennylofton/Documents/GitHub/cwentworth.github.io/nfl-2021/')
+
 #Commit Message
 commit_message = "update" + str(datetime.now().strftime('%Y-%m-%d'))
 
@@ -275,8 +282,9 @@ call('git add .', shell = True)
 # Add your commit
 call('git commit -m "'+ commit_message +'"', shell = True)
 
-#Push the new or update files
-call('git push origin master', shell = True)
+callCmd = 'git push https://' + pat + '@github.com/cwentworth/cwentworth.github.io.git'
+
+call(callCmd, shell = True)
 
 print('*****************************')
 print('*****************************')
