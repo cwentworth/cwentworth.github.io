@@ -160,7 +160,7 @@ teamPickSummaryDf.columns = ['Player','Team']
 teamPickSummaryDf = teamPickSummaryDf[[
 'Team','Player'
 ]]
-teamPickSummaryDf.sort_values(by=['Player', 'Team'])
+teamPickSummaryDf.sort_values(['Player', 'Team'])
 
 
 summary ={}
