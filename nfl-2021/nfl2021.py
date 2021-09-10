@@ -68,6 +68,22 @@ teamsReference = [
 
 meechPoolPicks = {
 "week_1":[
+['Tampa Bay Buccaneers'],
+['Buffalo Bills'],
+['Philadelphia Eagles'],
+['Washington Football Team'],
+['Tennessee Titans'],
+['Jacksonville Jaguars'],
+['San Francisco 49ers'],
+['Seattle Seahawks'],
+['Minnesota Vikings'],
+['Carolina Panthers'],
+['Denver Broncos'],
+['New England Patriots'],
+['Green Bay Packers'],
+['Kansas City Chiefs'],
+['Los Angeles Rams'],
+['Baltimore Ravens','51 total points']
 ]
 }
 
@@ -78,7 +94,7 @@ for wk in wks:
         wwins = 0
         for index, item in enumerate(personalPicks):
             if wk in season.keys():
-                if personalPicks[index] in season[wk]:
+                if personalPicks[index][0] in season[wk]:
                     wwins = wwins + 1
                     meechPoolSummary[wk]=wwins
 
@@ -86,7 +102,6 @@ mpTotal = []
 for wk in wks:
     if wk in meechPoolSummary.keys():
         mpTotal.append(meechPoolSummary[wk])
-
 
 
 chris = [
@@ -273,5 +288,8 @@ print('*****************************')
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
 
-for i in meechPoolPicks["week_17"]:
-    print(i)
+for index,item in enumerate(meechPoolPicks["week_1"]):
+    if index + 1 == len(meechPoolPicks["week_1"]):
+        print(item[0],"-",item[1])
+    else:
+        print(item[0])
