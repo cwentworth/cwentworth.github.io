@@ -85,6 +85,24 @@ meechPoolPicks = {
 ['Kansas City Chiefs'],
 ['Los Angeles Rams'],
 ['Baltimore Ravens','51 total points']
+],
+"week_2":[
+['Washington Football Team'],
+['New Orleans Saints'],
+['Cleveland Browns'],
+['Cincinnati Bengals'],
+['Pittsburgh Steelers'],
+['Buffalo Bills'],
+['Indianapolis Colts'],
+['San Francisco 49ers'],
+['Denver Broncos'],
+['New England Patriots'],
+['Arizona Cardinals'],
+['Tampa Bay Buccaneers'],
+['Tennessee Titans'],
+['Los Angeles Chargers'],
+['Kansas City Chiefs'],
+['Green Bay Packers','47 total points']
 ]
 }
 
