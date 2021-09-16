@@ -315,8 +315,8 @@ print('*****************************')
 print("total wins: " + str(sum(mpTotal)) + " / " + str(len(winsAll)) + " total potential wins: ")
 print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
 
-for index,item in enumerate(meechPoolPicks["week_1"]):
-    if index + 1 == len(meechPoolPicks["week_1"]):
+for index,item in enumerate(meechPoolPicks["week_2"]):
+    if index + 1 == len(meechPoolPicks["week_2"]):
         print(item[0],"-",item[1])
     else:
         print(item[0])
