@@ -273,7 +273,7 @@ body.append(standingsHtmls)
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
 updatedFields = BeautifulSoup(updatedField)
 
-personalWinPct = "<p id='winpct'" + "personal weekly win percentage: " + str(str(round((sum(mpTotal)/len(winsAll)),4))) + "</p>"
+personalWinPct = "<p id='winpct'>" + "personal weekly win percentage: " + str(str(round((sum(mpTotal)/len(winsAll)),4))) + "</p>"
 personalWinPcts = BeautifulSoup(personalWinPct)
 
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
