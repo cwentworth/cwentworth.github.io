@@ -272,11 +272,14 @@ picksTable.decompose()
 updateField = hc.find('p',attrs={'id':'updates'})
 updateField.decompose()
 
-updateField = hc.find('p',attrs={'id':'winpct'})
-updateField.decompose()
+winpctField = hc.find('p',attrs={'id':'winpct'})
+winpctField.decompose()
 
 headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
+
+endingdivField = hc.find('div',attrs={'id':'end'})
+endingdivField.decompose()
 
 teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
 picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False)
@@ -300,14 +303,18 @@ personalWinPcts = BeautifulSoup(personalWinPct)
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
 secondHeads = BeautifulSoup(secondHead)
 
+divend = "<div id='end'></div>"
+divends = BeautifulSoup(divend)
+
+for index, item in enumerate(weekPicksSummary):
+    divends.append(BeautifulSoup("<p id=winpct>" + str(item) + "</p>"))
 
 body.append(secondHeads)
 body.append(picksTableHtmls)
 body.append(updatedFields)
 body.append(personalWinPcts)
+body.append(divends)
 
-for index, item in enumerate(weekPicksSummary):
-    body.append(BeautifulSoup("<p id=winpct>" + str(item) + "</p>"))
 
 f.close()
 
