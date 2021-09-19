@@ -272,6 +272,9 @@ picksTable.decompose()
 updateField = hc.find('p',attrs={'id':'updates'})
 updateField.decompose()
 
+updateField = hc.find('p',attrs={'id':'winpct'})
+updateField.decompose()
+
 headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
 
@@ -296,6 +299,7 @@ personalWinPcts = BeautifulSoup(personalWinPct)
 
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
 secondHeads = BeautifulSoup(secondHead)
+
 
 body.append(secondHeads)
 body.append(picksTableHtmls)
