@@ -303,7 +303,7 @@ body.append(updatedFields)
 body.append(personalWinPcts)
 
 for index, item in enumerate(weekPicksSummary):
-    body.append(BeautifulSoup("<p id=personalWinPcts>" + str(item) + "</p>"))
+    body.append(BeautifulSoup("<p id=winpct>" + str(item) + "</p>"))
 
 f.close()
 
