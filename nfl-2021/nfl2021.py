@@ -242,6 +242,22 @@ susMatt.loc['Total']= susMatt.sum()
 finalOutput = pandas.merge(susChris,susDennis,on='Week',how='left')
 finalOutput = pandas.merge(finalOutput,susMatt,on='Week',how='left')
 
+weekPicksSummary = []
+for index, item in enumerate(teamsReference):
+    target = item
+    pickCt = 0
+    successCt = 0
+    for index, item in enumerate(personalPicksFlat):
+        if item == target:
+            pickCt = pickCt+1
+    for index, item in enumerate(winsAll):
+        if item == target:
+            successCt = successCt+1
+    if pickCt == 0:
+        successPct = 0
+    else :
+        successPct = successCt/pickCt
+    weekPicksSummary.append([target,pickCt,successPct])
 
 
 f = open('index.html','r')
