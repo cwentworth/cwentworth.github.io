@@ -273,12 +273,16 @@ body.append(standingsHtmls)
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
 updatedFields = BeautifulSoup(updatedField)
 
+personalWinPct = "<p id='winpct'" + "personal weekly win percentage: " + str(str(round((sum(mpTotal)/len(winsAll)),4))) + "</p>"
+personalWinPcts = BeautifulSoup(personalWinPct)
+
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
 secondHeads = BeautifulSoup(secondHead)
 
 body.append(secondHeads)
 body.append(picksTableHtmls)
 body.append(updatedFields)
+body.append(personalWinPcts)
 f.close()
 
 htmlFinal = hc.prettify("utf-8")
