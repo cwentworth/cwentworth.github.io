@@ -40,6 +40,12 @@ font-family: sans-serif;
 text-align: center;
 }
 
+#winpct {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.5em;
+}
+
 #standings tbody tr.selected {
   background-color: aqua;
 }
