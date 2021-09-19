@@ -106,12 +106,14 @@ meechPoolPicks = {
 ]
 }
 
+personalPicksFlat = []
 meechPoolSummary = {}
 for wk in wks:
     if wk in meechPoolPicks.keys():
         personalPicks = meechPoolPicks[wk]
         wwins = 0
         for index, item in enumerate(personalPicks):
+            personalPicksFlat.append(personalPicks[index][0])
             if wk in season.keys():
                 if personalPicks[index][0] in season[wk]:
                     wwins = wwins + 1
