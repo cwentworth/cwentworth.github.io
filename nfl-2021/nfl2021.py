@@ -290,7 +290,7 @@ body = hc.find('body')
 
 body.append(standingsHtmls)
 
-randVcode = str(random.choice(string.ascii_letters) + random.choice(string.ascii_letters) + random.choice(string.ascii_letters))
+randVcode = str(random.choice(string.ascii_letters) + random.choice(string.digits) + random.choice(string.ascii_letters))
 
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + " ...version: " + str(randVcode) + "</p>"
 updatedFields = BeautifulSoup(updatedField,features="lxml")
