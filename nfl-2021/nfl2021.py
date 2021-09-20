@@ -257,7 +257,7 @@ for index, item in enumerate(teamsReference):
         successPct = 0
     else :
         successPct = successCt/pickCt
-    weekPicksSummary.append([target,pickCt,successPct])
+    weekPicksSummary.append([target,pickCt,successCt])
 
 
 f = open('index.html','r')
