@@ -7,6 +7,8 @@ from datetime import timedelta
 import matplotlib.pyplot as plt
 from subprocess import call
 import os
+import random
+import string
 
 
 wks = [
@@ -288,9 +290,9 @@ body = hc.find('body')
 
 body.append(standingsHtmls)
 
-randVcode = 'aac'
+randVcode = str(random.choice(string.ascii_letters) + random.choice(string.ascii_letters) + random.choice(string.ascii_letters))
 
-updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + " v: " + str(randVcode) + "</p>"
+updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "           v: " + str(randVcode) + "</p>"
 updatedFields = BeautifulSoup(updatedField,features="lxml")
 
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
