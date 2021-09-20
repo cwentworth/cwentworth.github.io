@@ -37,7 +37,7 @@ for wk in wks:
   u = str("https://www.pro-football-reference.com/years/2021/" + wk + ".htm")
   r  = requests.get(u)
   data = r.text
-  soup = BeautifulSoup(data)
+  soup = BeautifulSoup(data,features="lxml")
   winners = soup.findAll("tr", {"class": "winner"})
   wins = []
   for row in winners:
@@ -262,7 +262,7 @@ for index, item in enumerate(teamsReference):
 
 f = open('index.html','r')
 html_content = f.read()
-hc = BeautifulSoup(html_content)
+hc = BeautifulSoup(html_content,features="lxml")
 standingsTable = hc.find('table',attrs={'id':'standings'})
 standingsTable.decompose()
 
@@ -277,22 +277,22 @@ headTwo.decompose()
 
 teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
 picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False)
-picksTableHtmls = BeautifulSoup(picksTableHtml)
+picksTableHtmls = BeautifulSoup(picksTableHtml,features="lxml")
 
 
 finalOutput.style.set_properties(**{'text-align': 'center'})
 standingsHtml = finalOutput.to_html(table_id='standings',classes=['compact', 'hover', 'stripe'],justify='center')
-standingsHtmls = BeautifulSoup(standingsHtml)
+standingsHtmls = BeautifulSoup(standingsHtml,features="lxml")
 
 body = hc.find('body')
 
 body.append(standingsHtmls)
 
 updatedField = "<p id='updates'>" + "updated: " + str(datetime.now().strftime('%Y-%m-%d')) + "</p>"
-updatedFields = BeautifulSoup(updatedField)
+updatedFields = BeautifulSoup(updatedField,features="lxml")
 
 secondHead = "<h2 id='secondH'><br></br>Pick Summary</h2>"
-secondHeads = BeautifulSoup(secondHead)
+secondHeads = BeautifulSoup(secondHead,features="lxml")
 
 body.append(secondHeads)
 body.append(picksTableHtmls)
