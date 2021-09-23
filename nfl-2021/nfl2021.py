@@ -49,26 +49,6 @@ for wk in wks:
     winsAll.append(cols[0])
     season[wk]=wins
 
-teamsReference = [
-'Arizona Cardinals','Atlanta Falcons',
-'Baltimore Ravens','Buffalo Bills',
-'Carolina Panthers','Chicago Bears','Cincinnati Bengals','Cleveland Browns',
-'Dallas Cowboys','Denver Broncos','Detroit Lions',
-'Green Bay Packers',
-'Houston Texans',
-'Indianapolis Colts',
-'Jacksonville Jaguars',
-'Kansas City Chiefs',
-'Los Angeles Chargers','Los Angeles Rams','Las Vegas Raiders',
-'Miami Dolphins','Minnesota Vikings',
-'New England Patriots','New Orleans Saints','New York Giants','New York Jets',
-'Philadelphia Eagles','Pittsburgh Steelers',
-'San Francisco 49ers','Seattle Seahawks',
-'Tampa Bay Buccaneers','Tennessee Titans',
-'Washington Football Team'
-]
-
-
 meechPoolPicks = {
 "week_1":[
 ['Tampa Bay Buccaneers'],
@@ -105,8 +85,46 @@ meechPoolPicks = {
 ['Los Angeles Chargers'],
 ['Kansas City Chiefs'],
 ['Green Bay Packers','47 total points']
+],
+"week_3":[
+['Carolina Panthers'],
+['Arizona Cardinals'],
+['Tennessee Titans'],
+['Baltimore Ravens'],
+['Buffalo Bills'],
+['New Orleans Saints'],
+['Kansas City Chiefs'],
+['Atlanta Falcons'],
+['Cleveland Browns'],
+['Pittsburgh Steelers'],
+['Las Vegas Raiders'],
+['Denver Broncos'],
+['Tampa Bay Buccaneers'],
+['Seattle Seahawks'],
+['San Francisco 49ers'],
+['Philadelphia Eagles','49 total points']
 ]
 }
+
+teamsReference = [
+'Arizona Cardinals','Atlanta Falcons',
+'Baltimore Ravens','Buffalo Bills',
+'Carolina Panthers','Chicago Bears','Cincinnati Bengals','Cleveland Browns',
+'Dallas Cowboys','Denver Broncos','Detroit Lions',
+'Green Bay Packers',
+'Houston Texans',
+'Indianapolis Colts',
+'Jacksonville Jaguars',
+'Kansas City Chiefs',
+'Los Angeles Chargers','Los Angeles Rams','Las Vegas Raiders',
+'Miami Dolphins','Minnesota Vikings',
+'New England Patriots','New Orleans Saints','New York Giants','New York Jets',
+'Philadelphia Eagles','Pittsburgh Steelers',
+'San Francisco 49ers','Seattle Seahawks',
+'Tampa Bay Buccaneers','Tennessee Titans',
+'Washington Football Team'
+]
+
 
 personalPicksFlat = []
 meechPoolSummary = {}
@@ -340,8 +358,8 @@ print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
 for i in weekPicksSummary:
     print(i)
 
-for index,item in enumerate(meechPoolPicks["week_2"]):
-    if index + 1 == len(meechPoolPicks["week_2"]):
+for index,item in enumerate(meechPoolPicks["week_3"]):
+    if index + 1 == len(meechPoolPicks["week_3"]):
         print(item[0],"-",item[1])
     else:
         print(item[0])
