@@ -33,6 +33,7 @@ th {
 
 td, th, table{
    border:none;
+   font-size: medium;
 }
 
 #updates {
