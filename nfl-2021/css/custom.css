@@ -33,7 +33,10 @@ th {
 
 td, th, table{
    border:none;
-   font-size: 0.85em;
+}
+
+#teamPicks {
+  font-size: 0.85em;
 }
 
 #updates {
