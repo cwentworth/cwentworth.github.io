@@ -36,7 +36,7 @@ td, th, table{
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
-  background-color: #a4f7e9;
+  background-color: #bffcf2;
 }
 
 #teamPicks {
