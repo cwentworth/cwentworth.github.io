@@ -39,7 +39,7 @@ td, th, table{
 font-family: sans-serif;
 text-align: center;
 font-size: 0.5em;
-color: darkslategray;
+color: rgb(104, 124, 124);
 }
 
 #standings tbody tr.selected {
