@@ -148,9 +148,9 @@ teamLogos = [
 ]
 
 teamLogosDf = pandas.DataFrame(teamLogos)
-teamLogosDf.columns = ['Team','LogoPath']
+teamLogosDf.columns = ['Team Name','Team']
 teamLogosDf = teamLogosDf[[
-'Team','LogoPath'
+'Team Name','Team'
 ]]
 
 
@@ -224,12 +224,15 @@ for i in matt:
     teamPickSummary.append(["Matt",i])
 
 teamPickSummaryDf = pandas.DataFrame(teamPickSummary)
-teamPickSummaryDf.columns = ['Player','Team']
+teamPickSummaryDf.columns = ['Player','Team Name']
+teamPickSummaryDf = teamPickSummaryDf[[
+'Team Name','Player'
+]]
+teamPickSummaryDf.sort_values(['Player', 'Team Name'])
+teamPickSummaryDf = pandas.merge(teamPickSummaryDf,teamLogosDf,on='Team Name',how='left')
 teamPickSummaryDf = teamPickSummaryDf[[
 'Team','Player'
 ]]
-teamPickSummaryDf.sort_values(['Player', 'Team'])
-teamPickSummaryDf = pandas.merge(teamPickSummaryDf,teamLogosDf,on='Team',how='left')
 
 summary ={}
 sus = []
