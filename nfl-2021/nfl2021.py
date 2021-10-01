@@ -168,7 +168,7 @@ teamLogos = [
 ['New England Patriots','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/ne.png" width="60"></img>'],
 ['New Orleans Saints','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/no.png" width="60"></img>'],
 ['New York Giants','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/nyg.png" width="60"></img>'],
-['New York Jets','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/njy.png" width="60"></img>'],
+['New York Jets','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/nyj.png" width="60"></img>'],
 ['Philadelphia Eagles','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/phi.png" width="60"></img>'],
 ['Pittsburgh Steelers','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/pit.png" width="60"></img>'],
 ['San Francisco 49ers','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/sf.png" width="60"></img>'],
