@@ -144,7 +144,7 @@ teamsReference = [
 ]
 
 teamLogos = [
-['Arizona Cardinals','<img src="/imgs/teams/ari.png" width="60" >']
+['Arizona Cardinals','<img src="https://cwentworth.github.io/nfl-2021/imgs/teams/ari.png" width="60"></img>']
 ]
 
 teamLogosDf = pandas.DataFrame(teamLogos)
