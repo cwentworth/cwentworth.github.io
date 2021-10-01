@@ -143,6 +143,16 @@ teamsReference = [
 'Washington Football Team'
 ]
 
+teamLogos = [
+['Arizona Cardinals','<img src="/imgs/teams/ari.png" width="60" >']
+]
+
+teamLogosDf = pandas.DataFrame(teamLogos)
+teamLogosDf.columns = ['Team','LogoPath']
+teamLogosDf = teamLogosDf[[
+'Team','LogoPath'
+]]
+
 
 personalPicksFlat = []
 meechPoolSummary = {}
@@ -219,7 +229,7 @@ teamPickSummaryDf = teamPickSummaryDf[[
 'Team','Player'
 ]]
 teamPickSummaryDf.sort_values(['Player', 'Team'])
-
+teamPickSummaryDf = pandas.merge(teamPickSummaryDf,teamLogosDf,on='Team',how='left')
 
 summary ={}
 sus = []
