@@ -324,7 +324,7 @@ headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
 
 teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
-picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False)
+picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False,escape=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml,features="lxml")
 
 
