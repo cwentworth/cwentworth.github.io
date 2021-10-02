@@ -296,7 +296,7 @@ susChris = susChris[[
 'weekNumber',
 'Wins'
 ]]
-susChris.columns = ['Week','Wins - Chris']
+susChris.columns = ['Week','Chris']
 susChris.sort_values(['Week'])
 susChris = susChris.set_index('Week')
 susChris.loc['Total']= susChris.sum()
@@ -306,7 +306,7 @@ susDennis = susDennis[[
 'weekNumber',
 'Wins'
 ]]
-susDennis.columns = ['Week','Wins - Dennis']
+susDennis.columns = ['Week','Dennis']
 susDennis.sort_values(['Week'])
 susDennis = susDennis.set_index('Week')
 susDennis.loc['Total']= susDennis.sum()
@@ -316,7 +316,7 @@ susMatt = susMatt[[
 'weekNumber',
 'Wins'
 ]]
-susMatt.columns = ['Week','Wins - Matt']
+susMatt.columns = ['Week','Matt']
 susMatt.sort_values(['Week'])
 susMatt = susMatt.set_index('Week')
 susMatt.loc['Total']= susMatt.sum()
