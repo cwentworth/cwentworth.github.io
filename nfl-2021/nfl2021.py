@@ -121,6 +121,24 @@ meechPoolPicks = {
 ['Green Bay Packers'],
 ['Tampa Bay Buccaneers'],
 ['Los Angeles Chargers','48 total points']
+],
+"week_5":[
+['Seattle Seahawks'],
+['Atlanta Falcons'],
+['Tampa Bay Buccaneers'],
+['Carolina Panthers'],
+['Washington Football Team'],
+['Tennessee Titans'],
+['Minnesota Vikings'],
+['Denver Broncos'],
+['Green Bay Packers'],
+['New England Patriots'],
+['Las Vegas Raiders'],
+['Los Angeles Chargers'],
+['Dallas Cowboys'],
+['San Francisco 49ers'],
+['Kansas City Chiefs'],
+['Baltimore Ravens','47 total points']
 ]
 }
 
@@ -420,8 +438,8 @@ print("winning percentage: " + str(round((sum(mpTotal)/len(winsAll)),4)))
 for i in weekPicksSummary:
     print(i)
 
-for index,item in enumerate(meechPoolPicks["week_4"]):
-    if index + 1 == len(meechPoolPicks["week_4"]):
+for index,item in enumerate(meechPoolPicks["week_5"]):
+    if index + 1 == len(meechPoolPicks["week_5"]):
         print(item[0],"-",item[1])
     else:
         print(item[0])
