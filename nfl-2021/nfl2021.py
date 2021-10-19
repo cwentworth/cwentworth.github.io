@@ -278,16 +278,13 @@ dennis = [
 ]
 
 chrisT = pandas.DataFrame(list(zip(chris)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
-chrisT = chrisT[['Team']]
-chrisT = chrisT.values.tolist()
+chrisT = chrisT['Team'].values.tolist()
 
 mattT = pandas.DataFrame(list(zip(matt)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
-mattT = mattT[['Team']]
-mattT = mattT.values.tolist()
+mattT = mattT['Team'].values.tolist()
 
 dennisT = pandas.DataFrame(list(zip(dennis)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
-dennisT = dennisT[['Team']]
-dennisT = dennisT.values.tolist()
+dennisT = dennisT['Team'].values.tolist()
 
 ts = pandas.DataFrame(list(zip(chrisT, dennisT, mattT)),
                columns =['Chris', 'Dennis', 'Matt'])
