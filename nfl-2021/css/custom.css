@@ -35,16 +35,6 @@ td, th, table{
    border:none;
 }
 
-tr.odd{
-  background-color: black !Important;
-  color: whitesmoke !Important;
-}
-
-tr.even{
-  background-color: darkslategray !Important;
-  color: whitesmoke !Important;
-}
-
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: #cdfdf5d7;
 }
