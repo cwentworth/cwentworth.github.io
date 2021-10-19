@@ -277,6 +277,9 @@ dennis = [
 'New York Giants'
 ]
 
+ts = pandas.DataFrame(list(zip(chris, dennis, matt)),
+               columns =['Chris', 'Dennis', 'Matt'])
+
 teamPickSummary = []
 
 for i in dennis:
@@ -287,6 +290,7 @@ for i in chris:
 
 for i in matt:
     teamPickSummary.append(["Matt",i])
+
 
 teamPickSummaryDf = pandas.DataFrame(teamPickSummary)
 teamPickSummaryDf.columns = ['Player','Team Name']
