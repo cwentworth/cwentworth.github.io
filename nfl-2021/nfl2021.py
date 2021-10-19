@@ -251,6 +251,9 @@ chris = [
 'New York Jets'
 ]
 
+chrisT = pandas.DataFrame(list(zip(chris)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
+chrisT = chrisT[['Team']]
+
 matt = [
 'Tampa Bay Buccaneers',
 'Buffalo Bills',
@@ -263,6 +266,9 @@ matt = [
 'Denver Broncos',
 'Jacksonville Jaguars'
 ]
+
+mattT = pandas.DataFrame(list(zip(matt)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
+mattT = mattT[['Team']]
 
 dennis = [
 'Kansas City Chiefs',
@@ -277,8 +283,12 @@ dennis = [
 'New York Giants'
 ]
 
-ts = pandas.DataFrame(list(zip(chris, dennis, matt)),
+dennisT = pandas.DataFrame(list(zip(dennis)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
+dennisT = dennisT[['Team']]
+
+ts = pandas.DataFrame(list(zip(chrisT, dennisT, mattT)),
                columns =['Chris', 'Dennis', 'Matt'])
+
 
 teamPickSummary = []
 
