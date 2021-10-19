@@ -290,28 +290,28 @@ ts = pandas.DataFrame(list(zip(chrisT, dennisT, mattT)),
                columns =['Chris', 'Dennis', 'Matt'])
 
 
-teamPickSummary = []
+# teamPickSummary = []
 
-for i in dennis:
-    teamPickSummary.append(["Dennis",i])
+# for i in dennis:
+#     teamPickSummary.append(["Dennis",i])
 
-for i in chris:
-    teamPickSummary.append(["Chris",i])
+# for i in chris:
+#     teamPickSummary.append(["Chris",i])
 
-for i in matt:
-    teamPickSummary.append(["Matt",i])
+# for i in matt:
+#     teamPickSummary.append(["Matt",i])
 
 
-teamPickSummaryDf = pandas.DataFrame(teamPickSummary)
-teamPickSummaryDf.columns = ['Player','Team Name']
-teamPickSummaryDf = teamPickSummaryDf[[
-'Team Name','Player'
-]]
-teamPickSummaryDf.sort_values(['Player', 'Team Name'])
-teamPickSummaryDf = pandas.merge(teamPickSummaryDf,teamLogosDf,on='Team Name',how='left')
-teamPickSummaryDf = teamPickSummaryDf[[
-'Team','Player'
-]]
+# teamPickSummaryDf = pandas.DataFrame(teamPickSummary)
+# teamPickSummaryDf.columns = ['Player','Team Name']
+# teamPickSummaryDf = teamPickSummaryDf[[
+# 'Team Name','Player'
+# ]]
+# teamPickSummaryDf.sort_values(['Player', 'Team Name'])
+# teamPickSummaryDf = pandas.merge(teamPickSummaryDf,teamLogosDf,on='Team Name',how='left')
+# teamPickSummaryDf = teamPickSummaryDf[[
+# 'Team','Player'
+# ]]
 
 summary ={}
 sus = []
