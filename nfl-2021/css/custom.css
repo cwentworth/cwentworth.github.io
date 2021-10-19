@@ -35,12 +35,14 @@ td, th, table{
    border:none;
 }
 
-.odd{
+tr.odd{
   background-color: black;
+  color: whitesmoke;
 }
 
-.even{
+tr.even{
   background-color: darkslategray;
+  color: whitesmoke;
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
