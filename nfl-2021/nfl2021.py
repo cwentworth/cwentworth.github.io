@@ -253,6 +253,7 @@ chris = [
 
 chrisT = pandas.DataFrame(list(zip(chris)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
 chrisT = chrisT[['Team']]
+chrisT = chrisT.values.tolist()
 
 matt = [
 'Tampa Bay Buccaneers',
@@ -269,6 +270,7 @@ matt = [
 
 mattT = pandas.DataFrame(list(zip(matt)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
 mattT = mattT[['Team']]
+mattT = mattT.values.tolist()
 
 dennis = [
 'Kansas City Chiefs',
@@ -285,6 +287,7 @@ dennis = [
 
 dennisT = pandas.DataFrame(list(zip(dennis)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
 dennisT = dennisT[['Team']]
+dennisT = dennisT.values.tolist()
 
 ts = pandas.DataFrame(list(zip(chrisT, dennisT, mattT)),
                columns =['Chris', 'Dennis', 'Matt'])
