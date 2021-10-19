@@ -1,0 +1,3 @@
+$('#teamPicks').DataTable({
+    "ordering": false
+});

@@ -406,7 +406,7 @@ headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
 
 ts.style.set_properties(**{'text-align': 'center'})
-picksTableHtml = ts.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe','sorting_disabled'],justify='center',index=False,escape=False)
+picksTableHtml = ts.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe', 'sorting_disabled'],justify='center',index=False,escape=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml,features="lxml")
 
 
