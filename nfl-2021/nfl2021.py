@@ -405,7 +405,7 @@ updateField.decompose()
 headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
 
-ts.style.set_properties(**{'text-align': 'center'})
+ts.style.set_properties(**{'text-align': 'center','ordering': 'false'})
 picksTableHtml = ts.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False,escape=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml,features="lxml")
 
