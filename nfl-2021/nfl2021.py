@@ -251,10 +251,6 @@ chris = [
 'New York Jets'
 ]
 
-chrisT = pandas.DataFrame(list(zip(chris)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
-chrisT = chrisT[['Team']]
-chrisT = chrisT.values.tolist()
-
 matt = [
 'Tampa Bay Buccaneers',
 'Buffalo Bills',
@@ -268,10 +264,6 @@ matt = [
 'Jacksonville Jaguars'
 ]
 
-mattT = pandas.DataFrame(list(zip(matt)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
-mattT = mattT[['Team']]
-mattT = mattT.values.tolist()
-
 dennis = [
 'Kansas City Chiefs',
 'Green Bay Packers',
@@ -284,6 +276,14 @@ dennis = [
 'Cincinnati Bengals',
 'New York Giants'
 ]
+
+chrisT = pandas.DataFrame(list(zip(chris)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
+chrisT = chrisT[['Team']]
+chrisT = chrisT.values.tolist()
+
+mattT = pandas.DataFrame(list(zip(matt)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
+mattT = mattT[['Team']]
+mattT = mattT.values.tolist()
 
 dennisT = pandas.DataFrame(list(zip(dennis)),columns=['Team Name']).merge(teamLogosDf,on='Team Name',how='left')
 dennisT = dennisT[['Team']]
@@ -408,8 +408,8 @@ updateField.decompose()
 headTwo = hc.find('h2',attrs={'id':'secondH'})
 headTwo.decompose()
 
-teamPickSummaryDf.style.set_properties(**{'text-align': 'center'})
-picksTableHtml = teamPickSummaryDf.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False,escape=False)
+ts.style.set_properties(**{'text-align': 'center'})
+picksTableHtml = ts.to_html(table_id='teamPicks',classes=['compact', 'hover', 'stripe'],justify='center',index=False,escape=False)
 picksTableHtmls = BeautifulSoup(picksTableHtml,features="lxml")
 
 
