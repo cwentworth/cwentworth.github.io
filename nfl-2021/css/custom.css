@@ -36,13 +36,13 @@ td, th, table{
 }
 
 tr.odd{
-  background-color: black;
-  color: whitesmoke;
+  background-color: black !Important;
+  color: whitesmoke !Important;
 }
 
 tr.even{
-  background-color: darkslategray;
-  color: whitesmoke;
+  background-color: darkslategray !Important;
+  color: whitesmoke !Important;
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
