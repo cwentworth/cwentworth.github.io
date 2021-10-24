@@ -3,6 +3,14 @@ html{
   margin-right: 10%;
 }
 
+.odd{
+  background-color: gray;
+}
+
+.even{
+  background-color: black;
+}
+
 td
 {
   text-align: center;
