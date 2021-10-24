@@ -3,12 +3,12 @@ html{
   margin-right: 10%;
 }
 
-.odd{
-  background-color: gray;
+.table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd{
+  background-color: rgb(0, 0, 0);
 }
 
-.even{
-  background-color: black;
+table.dataTable tbody tr{
+  background-color: rgb(129, 129, 129);
 }
 
 td
