@@ -501,7 +501,7 @@ for i in weekPicksSummary:
     print(i)
 
 for index,item in enumerate(meechPoolPicks["week_8"]):
-    if index + 1 == len(meechPoolPicks["week_7"]):
+    if index + 1 == len(meechPoolPicks["week_8"]):
         print(item[0],"-",item[1])
     else:
         print(item[0])
