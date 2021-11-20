@@ -33,6 +33,8 @@ th {
 
 td, th, table{
    border:none;
+   color:whitesmoke;
+   background-color:black;
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
