@@ -430,7 +430,7 @@ susChris.sort_values(['Week'])
 susChris = susChris.set_index('Week')
 
 csChris = susChris
-csChris['csum'] = csChris['Chris'].cumsum()
+csChris['csumChris'] = csChris['Chris'].cumsum()
 
 susChris.loc['Total']= susChris.sum()
 
@@ -444,7 +444,7 @@ susDennis.sort_values(['Week'])
 susDennis = susDennis.set_index('Week')
 
 csDennis = susDennis
-csDennis['csum'] = csDennis['Dennis'].cumsum()
+csDennis['csumDennis'] = csDennis['Dennis'].cumsum()
 
 susDennis.loc['Total']= susDennis.sum()
 
@@ -458,13 +458,30 @@ susMatt.sort_values(['Week'])
 susMatt = susMatt.set_index('Week')
 
 csMatt = susMatt
-csMatt['csum'] = csMatt['Matt'].cumsum()
+csMatt['csumMatt'] = csMatt['Matt'].cumsum()
 
 susMatt.loc['Total']= susMatt.sum()
 
 csFinal = pandas.merge(csChris,csDennis,on='Week',how='left')
 csFinal = pandas.merge(csFinal,csMatt,on='Week',how='left')
+csFinal = csFinal.reset_index(drop=False)
+csFinal = csFinal[[
+'Week',
+'csumChris',
+'csumDennis',
+'csumMatt'
+]]
+csFinal = csFinal[csFinal['Week'] != 'Total']
+csFinal.columns = ['Week','Chris','Dennis','Matt']
+csFinal = csFinal[[
+'Chris',
+'Dennis',
+'Matt'
+]]
 
+plt.style.use('dark_background')
+pp = csFinal.plot(style={'Chris':'Red','Dennis':'Teal','Matt':'Blue'})
+plt.savefig('imgs/progress.png')
 
 finalOutput = pandas.merge(susChris,susDennis,on='Week',how='left')
 finalOutput = pandas.merge(finalOutput,susMatt,on='Week',how='left')
