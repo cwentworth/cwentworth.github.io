@@ -1,6 +1,8 @@
 html{
   margin-left: 10%;
   margin-right: 10%;
+  background-color: black;
+  color: white;
 }
 
 td
@@ -36,7 +38,11 @@ td, th, table{
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
-  background-color: #cdfdf5d7;
+  background-color: #dfe93bd6;
+}
+
+table.dataTable.stripe.hover tbody tr.odd:hover, table.dataTable.display tbody tr.odd:hover {
+  background-color: #dfe93bd6;
 }
 
 #teamPicks {
@@ -49,3 +55,13 @@ text-align: center;
 font-size: 0.5em;
 color: rgb(195, 206, 206);
 }
+
+table.dataTable tbody tr{
+  background-color: black;
+  color:whitesmoke;
+  }
+  
+  table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+  background-color: rgb(21, 26, 26);
+  color:whitesmoke;
+  }
