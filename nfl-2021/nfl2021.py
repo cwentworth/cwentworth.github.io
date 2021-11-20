@@ -9,7 +9,7 @@ from subprocess import call
 import os
 import random
 import string
-
+from plotly import express as px
 
 wks = [
 "week_1",
@@ -428,6 +428,10 @@ susChris = susChris[[
 susChris.columns = ['Week','Chris']
 susChris.sort_values(['Week'])
 susChris = susChris.set_index('Week')
+
+csChris = susChris
+csChris['csum'] = csChris['Chris'].cumsum()
+
 susChris.loc['Total']= susChris.sum()
 
 susDennis = sus2[sus2['Player']=='Dennis']
@@ -438,6 +442,10 @@ susDennis = susDennis[[
 susDennis.columns = ['Week','Dennis']
 susDennis.sort_values(['Week'])
 susDennis = susDennis.set_index('Week')
+
+csDennis = susDennis
+csDennis['csum'] = csDennis['Dennis'].cumsum()
+
 susDennis.loc['Total']= susDennis.sum()
 
 susMatt = sus2[sus2['Player']=='Matt']
@@ -448,7 +456,15 @@ susMatt = susMatt[[
 susMatt.columns = ['Week','Matt']
 susMatt.sort_values(['Week'])
 susMatt = susMatt.set_index('Week')
+
+csMatt = susMatt
+csMatt['csum'] = csMatt['Matt'].cumsum()
+
 susMatt.loc['Total']= susMatt.sum()
+
+csFinal = pandas.merge(csChris,csDennis,on='Week',how='left')
+csFinal = pandas.merge(csFinal,csMatt,on='Week',how='left')
+
 
 finalOutput = pandas.merge(susChris,susDennis,on='Week',how='left')
 finalOutput = pandas.merge(finalOutput,susMatt,on='Week',how='left')
