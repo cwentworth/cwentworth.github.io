@@ -38,11 +38,13 @@ td, th, table{
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
-  background-color: #18a0a2e3;
+  background-color: #f0ff57ff;
+  color: black;
 }
 
 table.dataTable.stripe.hover tbody tr.odd:hover, table.dataTable.display tbody tr.odd:hover {
-  background-color: #18a0a2e3;
+  background-color: #f0ff57ff;
+  color: black;
 }
 
 #teamPicks {
