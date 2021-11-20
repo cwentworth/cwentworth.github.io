@@ -39,11 +39,6 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: #cdfdf5d7;
 }
 
-table.dataTable.hover tbody tr, table.dataTable.display tbody tr {
-  background-color: black;
-  color:white;
-}
-
 #teamPicks {
   font-size: 0.75em;
 }
