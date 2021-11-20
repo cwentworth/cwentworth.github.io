@@ -33,12 +33,15 @@ th {
 
 td, th, table{
    border:none;
-   color:whitesmoke;
-   background-color:black;
 }
 
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: #cdfdf5d7;
+}
+
+table.dataTable.hover tbody tr, table.dataTable.display tbody tr {
+  background-color: black;
+  color:white;
 }
 
 #teamPicks {
@@ -50,8 +53,4 @@ font-family: sans-serif;
 text-align: center;
 font-size: 0.5em;
 color: rgb(195, 206, 206);
-}
-
-#standings tbody tr.selected {
-  background-color: aqua;
 }
