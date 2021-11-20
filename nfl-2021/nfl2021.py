@@ -429,7 +429,7 @@ susChris.columns = ['Week','Chris']
 susChris.sort_values(['Week'])
 susChris = susChris.set_index('Week')
 
-csChris = susChris
+csChris = susChris.copy()
 csChris['csumChris'] = csChris['Chris'].cumsum()
 
 susChris.loc['Total']= susChris.sum()
@@ -443,7 +443,7 @@ susDennis.columns = ['Week','Dennis']
 susDennis.sort_values(['Week'])
 susDennis = susDennis.set_index('Week')
 
-csDennis = susDennis
+csDennis = susDennis.copy()
 csDennis['csumDennis'] = csDennis['Dennis'].cumsum()
 
 susDennis.loc['Total']= susDennis.sum()
@@ -457,7 +457,7 @@ susMatt.columns = ['Week','Matt']
 susMatt.sort_values(['Week'])
 susMatt = susMatt.set_index('Week')
 
-csMatt = susMatt
+csMatt = susMatt.copy()
 csMatt['csumMatt'] = csMatt['Matt'].cumsum()
 
 susMatt.loc['Total']= susMatt.sum()
