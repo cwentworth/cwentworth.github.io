@@ -240,7 +240,8 @@ meechPoolPicks = {
 "week_12":[
 ['Detroit Lions'],
 ['Dallas Cowboys'],
-['Buffalo Bills']
+['Buffalo Bills'],
+['','']
 ]
 }
 
