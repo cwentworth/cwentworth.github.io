@@ -241,7 +241,18 @@ meechPoolPicks = {
 ['Detroit Lions'],
 ['Dallas Cowboys'],
 ['Buffalo Bills'],
-['','']
+['New England Patriots'],
+['New York Jets'],
+['Philadelphia Eagles'],
+['Indianapolis Colts'],
+['Jacksonville Jaguars'],
+['Miami Dolphins'],
+['Cincinnati Bengals'],
+['Los Angeles Chargers'],
+['San Francisco 49ers'],
+['Green Bay Packers'],
+['Baltimore Ravens'],
+['Washington Football Team','45 total points']
 ]
 }
 
