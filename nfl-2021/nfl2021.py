@@ -497,7 +497,7 @@ csFinal = csFinal[[
 ]]
 
 plt.style.use('dark_background')
-pp = csFinal.plot(style={'Chris':'#AA0000','Dennis':'Teal','Matt':'Blue'},linestyle='-',marker='$•$')
+pp = csFinal.plot(style={'Chris':'#AA0000','Dennis':'#008e97','Matt':'#002244'},linestyle='-',marker='$•$')
 plt.savefig('imgs/progress.png')
 
 finalOutput = pandas.merge(susChris,susDennis,on='Week',how='left')
